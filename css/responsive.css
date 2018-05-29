@@ -1,0 +1,396 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .card0 {
+        font-size:11px;
+    }
+
+    .number1 a {
+        font-size:20px;
+        padding:0;
+    }
+
+    .number2 a {
+        font-size: 14px;
+        padding-right:21px;
+        padding-top:0px;
+    }
+
+    .blue {
+        margin-top: 7px;
+        padding: 13px 50px;
+        font-size: 13px;
+    }
+
+    .pack {
+        padding: 26px 0 0 0;
+    }
+
+    .forma {
+        padding: 3px 29px 14px;
+    }
+
+    .zayavka{
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 13px 0px;
+    } 
+
+    input {
+        margin-bottom: 6px;
+    }
+    .message {
+        margin: 6px 0 1px;
+        height: 72px;
+    }
+
+    .submit {
+        margin-bottom: 0px;
+    }
+
+    .zagolovok3 {
+        font-size: 20px;
+        text-align:left;
+        margin: 19px 0 6px;
+    }
+
+    .form-pad {
+        width: 60%;
+        margin-top: 19px;
+    }
+
+    .button-yellow {
+        margin: 19px 0px;
+    }
+    
+    .number1-footer {
+        font-size:20px;
+        padding-left:9px;
+        text-align:left;
+    }
+
+    .text-footer-nomargin {
+        margin:0;
+    }
+
+    .padin-top {
+        padding-top:0;
+    }
+
+    .fab {
+        margin-right: 3px;
+    }
+
+    .zagolovok-min{
+        font-size:22px;
+    }
+    .no-margin {
+        margin-bottom:0;
+    }
+    .big_text {
+        font-size:14px;
+    }
+    .back a {
+        font-size:16px;
+    }
+    .button.red{
+        padding: 16px 41px;
+        margin-top: 5px;
+    }
+}
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .flexnav {
+        display: none;
+    }
+
+    .menu-button {
+        padding-left:46px;
+        margin: 13px 0;
+        background-color: #52b2d7;
+    }
+
+    .menu-button:hover{
+        background-color: #51a1b4;
+        color:white;
+    }
+
+    .image{
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    .flexnav > li:first-child a {
+        border-radius: 5px 5px 0 0;
+    }
+    .flexnav > li:last-child a {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .forma {
+        border-radius:5px;
+    }
+
+    .text {
+        padding: 6px 11px 1px;
+    }
+
+    .submenu {
+        font-size: 14px;
+    }
+
+
+
+    .col-md-6 .col-lg-4{
+        margin-top: 10px;
+        padding-top:6px;
+    }
+    .pack {
+        justify-content: space-between;
+    }
+
+    .card0 {
+        font-size:14px;
+
+    }
+
+    .button.red {
+        display:none;
+
+    }
+
+    .button.red.show {
+        display: block;
+        margin-top:12px;
+        padding: 16px 0px;
+    }
+    .number1, .number2 {
+        text-align: right;
+    }
+    .number1 {
+        margin-top:10px;
+    }
+
+    .number2 a {
+        padding-right:0;
+    }
+
+    .logo {
+        width:98%;
+    }
+
+    .card {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .back a {
+        font-size: 15px;
+    }
+
+    .form-pad {
+        margin-right: 10px;
+    }
+    .hidden {
+        display:none;
+    }
+
+    .column, .column4 {
+        width:180px;
+
+    }
+
+    .column-padding, .column-padding2 {
+        padding-left:0;
+    }
+
+    .main-li, .column li a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .number1-footer {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .number2-footer {
+        text-align:left;
+    }
+
+    .text-footer-nomargin {
+        font-size: 14px;
+    }
+
+    .big_text {
+        font-size: 13px;
+    }
+
+    .padin-top {
+        margin-top: 7px;
+    }
+    .button.red.button-footer {
+        display: block;
+    }
+    .blue {
+        display:block;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .card0 {
+        font-size: 17px;
+    }
+
+    .number1, .number2 {
+        text-align:left;
+    }
+
+    .button.red {
+        display:block;
+        margin-top: 14px;
+    }
+
+    .button.red.show {
+        display:none;
+    }
+
+    .small-menu li {
+        padding: 0 6px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .mrg-top {
+        margin-top: 0;
+    }
+
+    .hidden {
+        display:inline;
+        font-size: 13px;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .column ul li {
+        text-align: center;
+        margin-right:0;
+    }
+    .column {
+        width: 255px;
+    }
+
+    .column4 {
+        width:220px;
+    }
+
+    .button.red.button-footer {
+        float:left;
+        display: block;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        background:#f2f2f2;
+    }
+
+    .logo {
+        width: 50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .card0 {
+        margin-left:auto;
+        margin-right:auto;
+        width: 70%;
+    }
+
+    .number1, .number2 {
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+    }
+
+    .number1 a {
+        font-size: 23px;
+    }
+
+    .number2 a {
+        font-size: 19px;
+    }
+
+    .button.red {
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .menu-button {
+
+            margin-left: auto;
+            margin-right: auto;
+
+    }
+
+    .flex-colum {
+        flex-direction: column;
+    }
+
+    .flex-colum li a {
+
+        display:block;
+        margin: 10px 0;
+        border-bottom:0;
+    }
+
+    .gray {
+
+        box-shadow: 2px 0px 2px 2px rgba(59, 63, 66, 0.2);
+    }
+
+    .column, .column4 {
+        width:400px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .text-footer {
+        text-align:center;
+    }
+
+    .form-pad {
+        width:100%;
+        margin-right: 0px;
+    }
+.container.flex-container {
+        padding: 0 30px;
+    }
+
+    .button-yellow {
+        width:100%;
+    }
+
+    #onTop {
+        float:right;
+    }
+
+    .button.blue {
+        width:50%;
+    }
+
+    .button.red.button-footer {
+        display:none;
+    }
+    
+}
