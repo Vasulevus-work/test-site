@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Boomer" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<title>����������� 2</title>
+</head>
+
+<body>
+
+
+
+
+<style type="text/css">
+<!--
+	.tabs{
+    display:inline-block;
+}
+.tabs > div{
+    padding-top:10px;
+}
+.tabs ul{
+    margin:0px;
+    padding:0px;
+}
+.tabs ul:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:5px;
+    background:#46c765;
+}
+.tabs ul li{
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding:10px 15px;
+    background:#e9eaeb;
+    color:#707070;
+}
+.tabs ul li.active, .tabs ul li.active:hover{
+    background:#46c765;
+    color:#fff;
+}
+.tabs ul li:hover{
+    background:#d6d6d7;
+}
+
+-->
+</style>
+
+
+
+
+<div class="tabs">
+    <ul>
+        <li>������ �������</li>
+        <li>������ �������</li>
+        <li>������ �������</li>
+    </ul>
+    <div>
+        <div>������ ����������</div>
+        <div>������ ����������</div>
+        <div>������ ����������</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+    $(".tabs").lightTabs();
+});
+
+
+
+
+(function($){
+    jQuery.fn.lightTabs = function(options){
+
+        var createTabs = function(){
+            tabs = this;
+            i = 0;
+
+            showPage = function(i){
+                $(tabs).children("div").children("div").hide();
+                $(tabs).children("div").children("div").eq(i).show();
+                $(tabs).children("ul").children("li").removeClass("active");
+                $(tabs).children("ul").children("li").eq(i).addClass("active");
+            }
+
+            showPage(0);
+
+            $(tabs).children("ul").children("li").each(function(index, element){
+                $(element).attr("data-page", i);
+                i++;
+            });
+
+            $(tabs).children("ul").children("li").click(function(){
+                showPage(parseInt($(this).attr("data-page")));
+            });
+        };
+        return this.each(createTabs);
+    };
+})(jQuery);
+
+
+</script>
+
+</body>
+</html>

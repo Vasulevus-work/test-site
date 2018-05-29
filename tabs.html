@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Tabs</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+  <div id="tabs">
+    <!-- Вкладки выполнены в виде списка с якорными ссылками -->
+    <ul class="tabs">
+      <li class="tab active"><a href="#description" class="active">Описание</a></li>
+      <li class="tab"><a href="#params">Характеристики</a></li>
+      <li class="tab"><a href="#replay">Отзывы</a></li>
+    </ul>
+    <!-- Содержимое каждой вкладки имеет id в соответствии с якорной ссылкой -->
+    <div class="tabs-content">
+      <div id="description">
+        <h3>Описание</h3>
+        <p>Текст описания товара </p>
+      </div>
+      <div id="params">
+        <h3>Характеристики</h3>
+        <p>Список характеристик</p>
+      </div>
+      <div id="replay">
+        <h3>Отзывы</h3>
+        <p>Форма отзыва и список отзывов</p>
+      </div>
+    </div>
+  </div>
+
+<script>$(document).ready(function(){
+        var tabs = $('#tabs');
+        $('.tabs-content > div', tabs).each(function(i){
+            if ( i != 0 ) $(this).hide(0);
+        });
+        tabs.on('click', '.tabs a', function(e){
+            /* Предотвращаем стандартную обработку клика по ссылке */
+            e.preventDefault();
+    
+            /* Узнаем значения ID блока, который нужно отобразить */
+            var tabId = $(this).attr('href');
+    
+            /* Удаляем все классы у якорей и ставим active текущей вкладке */
+            $('.tabs a',tabs).removeClass();
+            $(this).addClass('active');
+    
+            /* Прячем содержимое всех вкладок и отображаем содержимое нажатой */
+            $('.tabs-content > div', tabs).hide(0);
+            $(tabId).show();
+        });
+    });</script>
+</body>
+</html>

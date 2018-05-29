@@ -452,7 +452,7 @@ card {
     transition: all 0.2s;
 }
 
-.small-menu {
+.smallMenu {
     list-style-type: none;
     margin-bottom: 20px;
     margin-top:3px;
@@ -461,13 +461,13 @@ card {
     flex-wrap: wrap;
 }
 
-.small-menu li{
+.smallMenu li{
     flex-grow:1;
     text-align:center;
     padding: 0 15px;
 }
 
-.small-menu li a {
+.smallMenu li a {
     color:#56b9d0;
     font-size: 18px;
     font-weight: lighter;
@@ -476,7 +476,7 @@ card {
     border-bottom: 1px dashed #56b9d0;
 }
 
-.small-menu li a:hover, .small-menu li a:active, .small-menu li a:focus {
+.smallMenu li a:hover, .smallMenu li a:active, .smallMenu li a:focus {
     border-bottom: 0;
     color:black;
 }
@@ -760,3 +760,38 @@ a:hover .fab, a:hover .fas{
   .mfp-zoom-in.mfp-removing.mfp-bg {
     opacity: 0;
   }
+
+  .tabs{
+    display:inline-block;
+    }
+    .tabs > div{
+    padding-top:10px;
+    }
+    .tabs ul{
+    margin:0px;
+    padding:0px;
+    }
+    .tabs ul:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:5px;
+    background:#46c765;
+    }
+    .tabs ul li{
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding:10px 15px;
+    background:#e9eaeb;
+    color:#707070;
+    }
+    .tabs ul li.active, .tabs ul li.active:hover{
+    background:#46c765;
+    color:#fff;
+    }
+    .tabs ul li:hover{
+    background:#d6d6d7;
+    }
