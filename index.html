@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!-- Maginific popup -->
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Site</title>
@@ -531,78 +533,74 @@
         </div>
       </div>
 
-      <div class="container change mrg-top2"   >
+      <div class="container change mrg-top2">
           <h2 class="zagolovok">Коммерческая недвижимость</h2>
           <div class="menu-control">
-            <ul class="small-menu flex-colum">
-              <li><a href="#" >Все</a></li>
-              <li><a href="#">Готовые объекты</a></li>
-              <li><a href="#">Строящиеся объекты</a></li>
-              <li><a href="#">Проекты</a></li>
+            <ul class="button-group filters-button-group smallMenu flex-colum">
+              <li class="btn is-checked" data-filter="*">Все</li>
+              <li class="btn" data-filter=".ready">Готовые обьекты</li>
+              <li class="btn" data-filter=".building">Строящиеся объекты</li>
+              <li class="btn" data-filter=".projects">Проэкты</li>
             </ul>
-        </div>
-        </div>
-    <div class="container changing-pad">
-      <div class="row justify-content-between">
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/21842.jpg" alt="БЦ 'Два Капитала'">
-            </a>
-            <div class="text">
-              <a href="#">БЦ «Два Капитала»</a>
-              <p  class="submenu">
-                <i class="fa fa-check-circle"></i>
-                 Введен в эксплуатацию
-                </p>
-            </div> 
           </div>
         </div>
-        <div class="card col-md-4">
+        <div class="grid row">
+          <div class="element-item ready card col-md-4">
+              <div class="back">
+                <a href="#">
+                  <img src="img/21842.jpg" alt="БЦ 'Два Капитала'">
+                </a>
+                <div class="text">
+                  <a href="#">БЦ «Два Капитала»</a>
+                  <p  class="submenu">
+                    <i class="fa fa-check-circle"></i>
+                      Введен в эксплуатацию
+                    </p>
+                </div> 
+              </div>
+          </div>
+          <div class="element-item ready card col-md-4">
+              <div class="back">
+                <a href="#">
+                  <img src="img/20722.jpg" alt="БЦ 'Британский дом'">
+                </a>
+                <div class="text">
+                  <a href="#">БЦ «Британский дом»</a>
+                  <p class="submenu">
+                    <i class="fa fa-check-circle"></i>
+                      Введен в эксплуатацию
+                    </p>
+                </div> 
+              </div>
+          </div>
+          <div class="element-item ready card col-md-4">
             <div class="back">
               <a href="#">
-                <img src="img/20722.jpg" alt="БЦ 'Британский дом'">
+                <img src="img/5747.jpg" alt="БЦ 'Песочный замок'">
               </a>
               <div class="text">
-                <a href="#">БЦ «Британский дом»</a>
-                <p class="submenu">
+                <a href="#">БЦ «Песочный замок»</a>
+                <p  class="submenu">
                   <i class="fa fa-check-circle"></i>
-                   Введен в эксплуатацию
+                    Введен в эксплуатацию
                   </p>
               </div> 
             </div>
-        </div>
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/5747.jpg" alt="БЦ 'Песочный замок'">
-            </a>
-            <div class="text">
-              <a href="#">БЦ «Песочный замок»</a>
-              <p  class="submenu">
-                <i class="fa fa-check-circle"></i>
-                  Введен в эксплуатацию
-                </p>
-            </div> 
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-between  mrg-top">
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/5663.jpg" alt="БЦ 'Сосновый лес'">
-            </a>
-            <div class="text">
-              <a href="#">БЦ «Сосновый лес»</a>
-              <p  class="submenu">
-
-                 2 квартал 2018г.
-                </p>
-            </div> 
+          <div class="element-item building card col-md-4">
+            <div class="back">
+              <a href="#">
+                <img src="img/5663.jpg" alt="БЦ 'Сосновый лес'">
+              </a>
+              <div class="text">
+                <a href="#">БЦ «Сосновый лес»</a>
+                <p  class="submenu">
+                    2 квартал 2018г.
+                  </p>
+              </div> 
+            </div>
           </div>
-        </div>
-        <div class="card col-md-4">
+          <div class="element-item projects card col-md-4">
             <div class="back">
               <a href="#">
                 <img src="img/22122.jpg" alt="БЦ 'Мир минимализма'">
@@ -611,28 +609,25 @@
                 <a href="#">БЦ «Мир минимализма»</a>
                 <p class="submenu">
                   <i class="fa fa-check-circle"></i>
-                   Введен в эксплуатацию
+                    В проэкте
                   </p>
               </div> 
             </div>
-        </div>
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/20073.jpg" alt="БЦ 'Мечта поэта'">
-            </a>
-            <div class="text">
-              <a href="#">БЦ «Мечта поэта»</a>
-              <p  class="submenu">
-
-                  4 квартал 2018г.
-                </p>
-            </div> 
+          </div>
+          <div class="element-item building card col-md-4">
+            <div class="back">
+              <a href="#">
+                <img src="img/20073.jpg" alt="БЦ 'Мечта поэта'">
+              </a>
+              <div class="text">
+                <a href="#">БЦ «Мечта поэта»</a>
+                <p  class="submenu">
+                    4 квартал 2018г.
+                  </p>
+              </div> 
+            </div>
           </div>
         </div>
-      </div>
-      <a href="#" class="button aqua mrg-btm">Все предложения</a>
-    </div>
   </div><!--menu-->
 </section>
 
@@ -814,11 +809,13 @@
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="js/flexnav.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/tab.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
