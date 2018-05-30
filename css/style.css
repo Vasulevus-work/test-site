@@ -760,10 +760,10 @@ a:hover .fab, a:hover .fas{
   .mfp-zoom-in.mfp-removing.mfp-bg {
     opacity: 0;
   }
-
+/* 
   .tabs{
     display:inline-block;
-    }
+    } */
     .tabs > div{
     padding-top:10px;
     }

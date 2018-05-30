@@ -115,9 +115,7 @@
           <div>
             <img class="myImg" src="img/home.jpg" alt="Building">
           </div>
-          <div>
-            <img class="myImg" src="img/home_2.jpg" alt="Building">
-          </div>
+
       </div>
     </div>
     
@@ -147,120 +145,388 @@
         </div>
       </div>
     </div>
-    <div class="container change">
-      <h2 class="zagolovok">Жилая недвижимость</h2>
-      <div class="menu-control menuControl">
-          <ul class="smallMenu flex-colum">
-            <li><a href="#" >Все</a></li>
-            <li><a href="#">Готовые объекты</a></li>
-            <li><a href="#">Строящиеся объекты</a></li>
-            <li><a href="#">Проекты</a></li>
-          </ul>
-      </div>
-    </div>
-    <div class="container changing-pad">
-      <div class="row justify-content-between">
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
-            </a>
-            <div class="text">
-              <a href="#">ЖК «Два Квартала»</a>
-              <p  class="submenu">
-                <i class="fas fa-check-circle"></i>
-                 Введен в эксплуатацию
-                </p>
-            </div> 
-          </div>
-        </div>
-        <div class="card col-md-4">
-            <div class="back">
-              <a href="#">
-                <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
-              </a>
-              <div class="text">
-                <a href="#">ЖК «Британский дом»</a>
-                <p class="submenu">
-                  <i class="fas fa-check-circle"></i>
-                   Введен в эксплуатацию
-                  </p>
-              </div> 
-            </div>
-        </div>
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
-            </a>
-            <div class="text">
-              <a href="#">ЖК «Песочный замок»</a>
-              <p  class="submenu">
-                <i class="fas fa-check-circle"></i>
-                  Введен в эксплуатацию
-                </p>
-            </div> 
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-between  mrg-top">
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
-            </a>
-            <div class="text">
-              <a href="#">ЖК «Сосновый лес»</a>
-              <p  class="submenu">
-
-                 2 квартал 2018г.
-                </p>
-            </div> 
-          </div>
-        </div>
-        <div class="card col-md-4">
-            <div class="back">
-              <a href="#">
-                <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
-              </a>
-              <div class="text">
-                <a href="#">ЖК «Мир минимализма»</a>
-                <p class="submenu">
-                  <i class="fas fa-check-circle"></i>
-                   Введен в эксплуатацию
-                  </p>
-              </div> 
-            </div>
-        </div>
-        <div class="card col-md-4">
-          <div class="back">
-            <a href="#">
-              <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
-            </a>
-            <div class="text">
-              <a href="#">ЖК «Мечта поэта»</a>
-              <p  class="submenu">
-                  4 квартал 2018г.
-                </p>
-            </div> 
-          </div>
-        </div>
-      </div>
-      <a href="#" class="button aqua">Все предложения</a>
-    </div>
-
-
-    <div class="container change mrg-top2"   >
-      <h2 class="zagolovok">Коммерческая недвижимость</h2>
-      <div class="menu-control">
-        <ul class="smallMenu flex-colum">
-          <li><a href="#" >Все</a></li>
-          <li><a href="#">Готовые объекты</a></li>
-          <li><a href="#">Строящиеся объекты</a></li>
-          <li><a href="#">Проекты</a></li>
+    <div id="tabs">
+        <!-- Вкладки выполнены в виде списка с якорными ссылками -->
+        <ul class="tabs smallMenu flex-colum">
+          <li class="tab active"><a href="#all" class="active">Все</a></li>
+          <li class="tab"><a href="#ready">Готовые объекты</a></li>
+          <li class="tab"><a href="#building">Строящиеся объекты</a></li>
+          <li><a href="#projects">Проекты</a></li>
         </ul>
-    </div>
-    </div>
+        <!-- Содержимое каждой вкладки имеет id в соответствии с якорной ссылкой -->
+        <div class="tabs-content">
+          <div id="all">
+            <div class="container changing-pad">
+              <div class="row justify-content-between">
+                <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Два Квартала»</a>
+                      <p  class="submenu">
+                        <i class="fas fa-check-circle"></i>
+                         Введен в эксплуатацию
+                        </p>
+                    </div> 
+                  </div>
+                </div>
+                <div class="card col-md-4">
+                    <div class="back">
+                      <a href="#">
+                        <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
+                      </a>
+                      <div class="text">
+                        <a href="#">ЖК «Британский дом»</a>
+                        <p class="submenu">
+                          <i class="fas fa-check-circle"></i>
+                           Введен в эксплуатацию
+                          </p>
+                      </div> 
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Песочный замок»</a>
+                      <p  class="submenu">
+                        <i class="fas fa-check-circle"></i>
+                          Введен в эксплуатацию
+                        </p>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between  mrg-top">
+                <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Сосновый лес»</a>
+                      <p  class="submenu">
+        
+                         2 квартал 2018г.
+                        </p>
+                    </div> 
+                  </div>
+                </div>
+                <div class="card col-md-4">
+                    <div class="back">
+                      <a href="#">
+                        <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
+                      </a>
+                      <div class="text">
+                        <a href="#">ЖК «Мир минимализма»</a>
+                        <p class="submenu">
+                          <i class="fas fa-check-circle"></i>
+                           Введен в эксплуатацию
+                          </p>
+                      </div> 
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Мечта поэта»</a>
+                      <p  class="submenu">
+                          4 квартал 2018г.
+                        </p>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="button aqua">Все предложения</a>
+            </div>
+          </div>
+    
+          <div id="ready">
+            <div class="container changing-pad">
+            <div class="row justify-content-between">
+    
+              <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Британский дом»</a>
+                      <p class="submenu">
+                        <i class="fas fa-check-circle"></i>
+                        Введен в эксплуатацию
+                        </p>
+                    </div> 
+                  </div>
+              </div>
+              <div class="card col-md-4">
+                <div class="back">
+                  <a href="#">
+                    <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
+                  </a>
+                  <div class="text">
+                    <a href="#">ЖК «Песочный замок»</a>
+                    <p  class="submenu">
+                      <i class="fas fa-check-circle"></i>
+                        Введен в эксплуатацию
+                      </p>
+                  </div> 
+                </div>
+              </div>
+              <div class="card col-md-4">
+                <div class="back">
+                  <a href="#">
+                    <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
+                  </a>
+                  <div class="text">
+                    <a href="#">ЖК «Два Квартала»</a>
+                    <p  class="submenu">
+                      <i class="fas fa-check-circle"></i>
+                      Введен в эксплуатацию
+                      </p>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between  mrg-top">
+              <div class="card col-md-4">
+                <div class="back">
+                  <a href="#">
+                    <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
+                  </a>
+                  <div class="text">
+                    <a href="#">ЖК «Сосновый лес»</a>
+                    <p  class="submenu">
+    
+                      2 квартал 2018г.
+                      </p>
+                  </div> 
+                </div>
+              </div>
+              <div class="card col-md-4">
+                  <div class="back">
+                    <a href="#">
+                      <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
+                    </a>
+                    <div class="text">
+                      <a href="#">ЖК «Мир минимализма»</a>
+                      <p class="submenu">
+                        <i class="fas fa-check-circle"></i>
+                        Введен в эксплуатацию
+                        </p>
+                    </div> 
+                  </div>
+              </div>
+              <div class="card col-md-4">
+                <div class="back">
+                  <a href="#">
+                    <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
+                  </a>
+                  <div class="text">
+                    <a href="#">ЖК «Мечта поэта»</a>
+                    <p  class="submenu">
+                        4 квартал 2018г.
+                      </p>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <a href="#" class="button aqua">Все предложения</a>
+          </div>
+            </div>
+          <div id="building">
+              <div class="container changing-pad">
+                <div class="row justify-content-between">
+                    <div class="card col-md-4">
+                      <div class="back">
+                          <a href="#">
+                            <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
+                          </a>
+                          <div class="text">
+                            <a href="#">ЖК «Песочный замок»</a>
+                            <p  class="submenu">
+                              <i class="fas fa-check-circle"></i>
+                                Введен в эксплуатацию
+                              </p>
+                          </div> 
+                      </div>
+                    </div>
+                  <div class="card col-md-4">
+                    <div class="back">
+                      <a href="#">
+                        <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
+                      </a>
+                      <div class="text">
+                        <a href="#">ЖК «Два Квартала»</a>
+                        <p  class="submenu">
+                          <i class="fas fa-check-circle"></i>
+                           Введен в эксплуатацию
+                          </p>
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="card col-md-4">
+                      <div class="back">
+                        <a href="#">
+                          <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
+                        </a>
+                        <div class="text">
+                          <a href="#">ЖК «Британский дом»</a>
+                          <p class="submenu">
+                            <i class="fas fa-check-circle"></i>
+                             Введен в эксплуатацию
+                            </p>
+                        </div> 
+                      </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between  mrg-top">
+                  <div class="card col-md-4">
+                    <div class="back">
+                      <a href="#">
+                        <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
+                      </a>
+                      <div class="text">
+                        <a href="#">ЖК «Сосновый лес»</a>
+                        <p  class="submenu">
+          
+                           2 квартал 2018г.
+                          </p>
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="card col-md-4">
+                      <div class="back">
+                        <a href="#">
+                          <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
+                        </a>
+                        <div class="text">
+                          <a href="#">ЖК «Мир минимализма»</a>
+                          <p class="submenu">
+                            <i class="fas fa-check-circle"></i>
+                             Введен в эксплуатацию
+                            </p>
+                        </div> 
+                      </div>
+                  </div>
+                  <div class="card col-md-4">
+                    <div class="back">
+                      <a href="#">
+                        <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
+                      </a>
+                      <div class="text">
+                        <a href="#">ЖК «Мечта поэта»</a>
+                        <p  class="submenu">
+                            4 квартал 2018г.
+                          </p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="button aqua">Все предложения</a>
+              </div>
+            </div>
+          <div id="projects">
+              <div class="container changing-pad">
+                  <div class="row justify-content-between">
+                    <div class="card col-md-4">
+                        <div class="back">
+                          <a href="#">
+                            <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
+                          </a>
+                          <div class="text">
+                            <a href="#">ЖК «Британский дом»</a>
+                            <p class="submenu">
+                              <i class="fas fa-check-circle"></i>
+                               Введен в эксплуатацию
+                              </p>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <div class="back">
+                          <a href="#">
+                            <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
+                          </a>
+                          <div class="text">
+                            <a href="#">ЖК «Два Квартала»</a>
+                            <p  class="submenu">
+                              <i class="fas fa-check-circle"></i>
+                               Введен в эксплуатацию
+                              </p>
+                          </div> 
+                        </div>
+                      </div>
+                    <div class="card col-md-4">
+                      <div class="back">
+                        <a href="#">
+                          <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
+                        </a>
+                        <div class="text">
+                          <a href="#">ЖК «Песочный замок»</a>
+                          <p  class="submenu">
+                            <i class="fas fa-check-circle"></i>
+                              Введен в эксплуатацию
+                            </p>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between  mrg-top">
+                    <div class="card col-md-4">
+                      <div class="back">
+                        <a href="#">
+                          <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
+                        </a>
+                        <div class="text">
+                          <a href="#">ЖК «Сосновый лес»</a>
+                          <p  class="submenu">
+            
+                             2 квартал 2018г.
+                            </p>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <div class="back">
+                          <a href="#">
+                            <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
+                          </a>
+                          <div class="text">
+                            <a href="#">ЖК «Мир минимализма»</a>
+                            <p class="submenu">
+                              <i class="fas fa-check-circle"></i>
+                               Введен в эксплуатацию
+                              </p>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                      <div class="back">
+                        <a href="#">
+                          <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
+                        </a>
+                        <div class="text">
+                          <a href="#">ЖК «Мечта поэта»</a>
+                          <p  class="submenu">
+                              4 квартал 2018г.
+                            </p>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="button aqua">Все предложения</a>
+                </div>
+          </div>
+        </div>
+      </div>
 
     <div class="container changing-pad">
       <div class="row justify-content-between">
@@ -533,7 +799,7 @@
     <!-- Flexnav plugin -->
 
 
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/flexnav.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
