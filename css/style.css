@@ -42,7 +42,9 @@ select {
     padding: 9px 16px;
 }
 
-
+header-bottom {
+    margin-top:19px;
+}
 
 body {
     font-family: "Roboto", "FontAwesome", sans-serif;
@@ -105,6 +107,7 @@ img {
 
 .cont1 {
     text-align: center;
+    margin-top:6px;
     margin-bottom: 0;
     padding-top: 0;
     display: flex;
@@ -120,17 +123,17 @@ h2 {
 }
 
 .pack {
-    padding: 14px 0 0 0;
+    padding: 9px 0 0 0;
     display: flex;
 }
 
 .logo {
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 
 .card0 {
-    padding: 10px 20px 10px 31px;
+    padding: 14px 20px 10px 32px;
 
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
     line-height: 1.35;
@@ -143,6 +146,7 @@ h2 {
 
 card {
     padding: 0 20px;
+    margin-top:10px;
 }
 
 .changing-pad {
@@ -207,7 +211,7 @@ card {
     text-decoration: underline;
 }
 .change {
-    margin-bottom: 6px;
+    margin-bottom: 19px;
 }
 
 
@@ -215,16 +219,19 @@ card {
     padding-top:10px;
 }
 
+
+
 .number1  a{
     font-size: 28px;
     color:black;
     font-weight: bold;
-    margin-top: -5px;
-    line-height: 1.1;
+     line-height: 1.1;
     padding-left: 5px;
 }
 
-
+.number2 {
+    margin-top:2px;
+}
 
 .number2 a{
     display: block;
@@ -260,7 +267,7 @@ card {
 
 
 .red {
-    margin-top:15px;
+    margin-top: 20px;
     background-color: red;
 }
 
@@ -270,29 +277,39 @@ card {
 }
 
 .aqua:hover {
-    background-color: #3b65ce;
+    background-color: red;
     color:white;
 }
 
 
-.red:hover {background: salmon; color: black;}
+.red:hover {background: #fbba42; color: white;}
 
 .zagolovok {
     font-size: 36px;
     margin: 15px 0 4px;
 }
 
+.zagolovok4 {
+    font-size: 36px;
+    margin: 13px 0 5px;
+}
+
 .mrg-top {
     margin-top: 30px;
 }
 
+.c-m-b {
+    margin-bottom:3px;
+}
+
 
 .mrg-top2 {
-    margin-top:62px;
+    margin-top: 61px;
 }
 
 .mrg-top3 {
-    margin-top:42px;
+    margin-top:72px;
+
 }
 
 .mrg-btm {
@@ -300,6 +317,7 @@ card {
 }
 
 .mrg-btm2 {
+    padding-top:10px;
     margin-bottom:20px;
 }
 
@@ -351,6 +369,7 @@ card {
 
 .flexnav li a:hover {
     background-color: #51a1b4;
+    color:white;
 }
 
 
@@ -417,7 +436,7 @@ card {
 }
 
 .submit:hover {
-    background-color: #b7832f;
+    background-color: red;
     border-radius: 5px;
     cursor:pointer;
 }
@@ -455,14 +474,21 @@ card {
 .smallMenu {
     list-style-type: none;
     margin-bottom: 20px;
-    margin-top:3px;
+    margin-top: 5px;
+    line-height: 25px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.smallMenu-w {
+    margin-bottom:12px;
+}
+
+
 .smallMenu li{
+
     text-align:center;
     padding: 0 15px;
 }
@@ -503,7 +529,7 @@ card {
     margin-bottom:16px;
 }
 
-.big_text {
+.big_text p {
     text-align: left;
     line-height: 1.6;
     margin-bottom: 23px;
@@ -532,7 +558,7 @@ card {
 
 .button-yellow:hover {
     cursor:pointer;
-    background-color: #b7832f;
+    background-color:#56b9d0;
 }
 
 .zagolovok3 {
@@ -624,7 +650,9 @@ card {
     font-weight: bold;
     color:white;
     padding-top:35px;
-    padding-left:9px;
+    text-align:left;
+    padding-left:3px;
+
 }
 
 .text-footer {
@@ -683,7 +711,9 @@ card {
 }
 
 .fas {
-    width: 70px;
+    width: 18px;
+    color:#52b2d7;
+    font-size:14px;
 }
 
 a:hover .fab, a:hover .fas{
@@ -760,38 +790,26 @@ a:hover .fab, a:hover .fas{
   .mfp-zoom-in.mfp-removing.mfp-bg {
     opacity: 0;
   }
-/* 
-  .tabs{
-    display:inline-block;
-    } */
-    .tabs > div{
-    padding-top:10px;
-    }
-    .tabs ul{
-    margin:0px;
-    padding:0px;
-    }
-    .tabs ul:after{
-    content:"";
-    display:block;
-    clear:both;
-    height:5px;
-    background:#46c765;
-    }
-    .tabs ul li{
-    margin:0px;
-    padding:0px;
+ .btn { 
+color:#56b9d0;
+font-size: 18px;
+font-weight: lighter;
+line-height: 1em;
+text-decoration: underline;
+padding-bottom:10px;
+}
+
+.btn:hover {
     cursor:pointer;
-    display:block;
-    float:left;
-    padding:10px 15px;
-    background:#e9eaeb;
-    color:#707070;
-    }
-    .tabs ul li.active, .tabs ul li.active:hover{
-    background:#46c765;
-    color:#fff;
-    }
-    .tabs ul li:hover{
-    background:#d6d6d7;
-    }
+    color:black;
+    text-decoration: none;
+}
+
+.bt {
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.change2 {
+    margin-bottom: 24px;
+}
