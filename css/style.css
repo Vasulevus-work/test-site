@@ -459,10 +459,10 @@ card {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .smallMenu li{
-    flex-grow:1;
     text-align:center;
     padding: 0 15px;
 }
