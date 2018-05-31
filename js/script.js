@@ -1,6 +1,35 @@
  $(document).ready(function() {
 
+  $('a[href*="#top"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
 
+        });
+      }
+    }
+  });
 
      $('select').niceSelect();
      $(".flexnav").flexNav();
@@ -28,6 +57,7 @@
           var tabId = $(this).attr('href');
   
           /* Удаляем все классы у якорей и ставим active текущей вкладке */
+          // $('.tab a #all').addClas('active');
           $('.tabs a',tabs).removeClass();
           $(this).addClass('active');
   
@@ -70,20 +100,7 @@
       });
 
 
-    // setup_slight_scroll_to_anchors();
-   
-    // // function setup_slight_scroll_to_anchors() {
-    // //     $('a[href^="#"]').not('.popup').click(function() {
-    // //         var link = jQuery(this);
-    // //         if (link.attr('href') == '#') return;
-    // //         var target = link.attr('href');
-    // //         var target_top = jQuery(target).offset().top;
-    // //         jQuery('html, body').animate({
-    // //            scrollTop: target_top
-    // //         }, 1000);
-    // //         return false;
-    // //     });
-    // // }
+
 
 
     $('.image').slick({
