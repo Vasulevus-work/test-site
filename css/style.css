@@ -221,9 +221,9 @@ card {
 
 
 
-.number1  a{
+.number1 a{
     font-size: 28px;
-    color:black;
+    color:white;
     font-weight: bold;
      line-height: 1.1;
     padding-left: 5px;
@@ -571,6 +571,7 @@ card {
 .big_text-white {
     color:white;
     margin-bottom:10px;
+    text-align: left;
 }
 
 .flex-container {
@@ -626,7 +627,10 @@ card {
     font-weight: lighter;
 }
 
-
+.no-margin {
+    margin-bottom: 0px;
+    padding: 0px;
+}
 
 .column-padding {
     padding-left:57px;
@@ -708,15 +712,42 @@ card {
 .fab {
     margin-right:15px;
     float:left;
+    width:40px;
+    height:40px;
+    color:white;
+    background-color: transparent;
+    font-size: 16px;
+    padding-top:10px;
+    border:2px solid white;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.fas {
+ a .fab:hover {
+    background-color:white;
+    color:#3b3f42;
+}
+
+
+.fa-check-circle {
     width: 18px;
     color:#52b2d7;
     font-size:14px;
 }
 
-a:hover .fab, a:hover .fas{
+.fas .fa-chevron-up {
+    width:60px;
+    height:40px;
+    color:white;
+    background-color: transparent;
+    font-size: 16px;
+    padding-top:10px;
+    border:2px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+ a:hover .fas{
     border:4px solid white;
     padding-top:8px;
 }
