@@ -223,8 +223,8 @@ card {
 
 .number1 a{
     font-size: 28px;
-    color:white;
     font-weight: bold;
+    color:black;
      line-height: 1.1;
     padding-left: 5px;
 }
@@ -650,13 +650,20 @@ card {
 }
 
 .number1-footer {
+
     font-size: 32px;
     font-weight: bold;
     color:white;
     padding-top:35px;
     text-align:left;
-    padding-left:3px;
+    padding-left:5px;
+    padding-top: 42px;
 
+}
+
+.number1-footer a{
+    color:white;
+    font-size: 31px;
 }
 
 .text-footer {
@@ -697,17 +704,6 @@ card {
     text-decoration: none;
 }
 
-/* .fab, .fas {
-    width:40px;
-    height:40px;
-    color:white;
-    background-color: transparent;
-    font-size: 16px;
-    padding-top:10px;
-    border:2px solid white;
-    border-radius: 5px;
-    text-align: center;
-} */
 
 .fab {
     margin-right:15px;
@@ -735,21 +731,23 @@ card {
     font-size:14px;
 }
 
-.fas .fa-chevron-up {
-    width:60px;
-    height:40px;
-    color:white;
-    background-color: transparent;
-    font-size: 16px;
-    padding-top:10px;
-    border:2px solid white;
+.fa-chevron-up{
+border: 2px solid white;
+    width: 69px;
+    height: 40px;
+    color: white;
     border-radius: 5px;
-    text-align: center;
+    padding-top: 8px;
+    margin-left: 20px;
 }
 
- a:hover .fas{
-    border:4px solid white;
-    padding-top:8px;
+
+
+
+
+ a .fa-chevron-up:hover{
+    color:#3b3f42;
+    background-color:white;
 }
 
 .padin-top {
