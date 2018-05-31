@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <title>Site</title>
 </head>
-<body> 
+<body>
   <header>
 
     <div class="header-top" id="top"><!--header-top-->
@@ -28,7 +28,7 @@
           <div class="pack">
         <div class="row justify-content-around">
           <div class="col-12 col-md-8 col-lg-5">
- 
+
                 <div class="row no-gutters">
 
                   <div class="col-12 col-sm-5">
@@ -38,7 +38,7 @@
                   </div>
                   <div class="col-12 col-sm-7">
                     <div class="card0">
-                    Жилая и коммерческая недвижимость в Тольятти от застройщика 
+                    Жилая и коммерческая недвижимость в Тольятти от застройщика
                     </div>
                   </div>
                 </div>
@@ -69,25 +69,29 @@
             <li><a href="">Коммерческая недвижимость</a></li>
             <li><a href="">О нас</a></li>
             <li><a href="">Оплата</a></li>
-            <li><a href="">Вопрос-ответ</a></li> 
-            <li><a href="">Акции</a></li> 
-            <li><a href="">Статьи</a></li> 
-            <li><a href="#contact">Контакты</a></li> 
-        </ul> 
+            <li><a href="">Вопрос-ответ</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Статьи</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
         </div><!--row-->
       </div> <!--container-->
     </div><!--header-bottom-->
   </header>
   <!-- Popup itself -->
   <div id="forma" class="white-popup mfp-with-anim mfp-hide">  <div class="forma col-12">
-    <h2 class="zayavka">Быстрая заявка</h2>
 
-    <form action="submit.php">
-      
-      <input type="text" name="FirstName" placeholder="Имя" required>
+
+    <form>
+          <h2 class="zayavka">Быстрая заявка</h2>
+      <input type="hidden" name="project_name" value="Site Name">
+      <input type="hidden" name="admin_email" value="vasulevus@gmail.com">
+      <input type="hidden" name="form_subject" value="Form Subject">
+
+      <input type="text" name="firstName" placeholder="Имя" required>
 
       <input type="email" name="email" placeholder="Email" required>
-      
+
 
 
       <select name="building" class="options">
@@ -100,10 +104,10 @@
         <textarea name="message" class="message" placeholder="Сообщение" ></textarea>
       <button type="submit" class="submit">
         Отправить заявку</button>
-    </form> 
+    </form>
   </div></div>
-  
-  
+
+
 
 
 
@@ -119,8 +123,9 @@
       </div>
       <div class="col-lg-4">
         <div class="forma">
-          <h2 class="zayavka">Быстрая заявка</h2>
-          <form action="submit.php">
+
+          <form>
+                      <h2 class="zayavka">Быстрая заявка</h2>
             <input type="text" name="FirstName" placeholder="Имя" required>
             <input type="email" name="email" placeholder="Email" required>
             <select name="building" class="options">
@@ -133,7 +138,7 @@
               <textarea name="message" class="message" placeholder="Сообщение" ></textarea>
             <button type="submit" class="submit">
               Отправить заявку</button>
-          </form> 
+          </form>
         </div>
       </div>
     </div>
@@ -164,7 +169,7 @@
                         <i class="fas fa-check-circle"></i>
                         Введен в эксплуатацию
                         </p>
-                    </div> 
+                    </div>
                   </div>
                 </div>
                 <div class="card col-sm-6 col-md-4">
@@ -178,7 +183,7 @@
                           <i class="fas fa-check-circle"></i>
                           Введен в эксплуатацию
                           </p>
-                      </div> 
+                      </div>
                     </div>
                 </div>
                 <div class="card col-sm-6 col-md-4">
@@ -192,7 +197,7 @@
                         <i class="fas fa-check-circle"></i>
                           Введен в эксплуатацию
                         </p>
-                    </div> 
+                    </div>
                   </div>
                 </div>
                 <div class="card col-sm-6 col-md-4">
@@ -203,10 +208,10 @@
                     <div class="text">
                       <a href="">ЖК «Сосновый лес»</a>
                       <p  class="submenu">
-        
+
                         2 квартал 2018г.
                         </p>
-                    </div> 
+                    </div>
                   </div>
                 </div>
                 <div class="card col-sm-6 col-md-4">
@@ -220,7 +225,7 @@
                           <i class="fas fa-check-circle"></i>
                           Введен в эксплуатацию
                           </p>
-                      </div> 
+                      </div>
                     </div>
                 </div>
                 <div class="card col-sm-6 col-md-4">
@@ -233,7 +238,7 @@
                       <p  class="submenu">
                           4 квартал 2018г.
                         </p>
-                    </div> 
+                    </div>
                   </div>
                 </div>
               </div>
@@ -243,7 +248,7 @@
               <a href="" class="button aqua">Все предложения</a>
             </div>
           </div>
-    
+
           <div id="ready">
             <div class="container changing-pad">
             <div class="row justify-content-between">
@@ -258,7 +263,7 @@
                         <i class="fas fa-check-circle"></i>
                         Введен в эксплуатацию
                         </p>
-                    </div> 
+                    </div>
                   </div>
               </div>
               <div class="card  col-sm-6 col-md-4">
@@ -272,7 +277,7 @@
                         <i class="fas fa-check-circle"></i>
                         Введен в эксплуатацию
                         </p>
-                    </div> 
+                    </div>
                   </div>
               </div>
 
@@ -287,7 +292,7 @@
                       <i class="fas fa-check-circle"></i>
                       Введен в эксплуатацию
                       </p>
-                  </div> 
+                  </div>
                 </div>
               </div>
               <div class="card  col-sm-6 col-md-4">
@@ -301,7 +306,7 @@
                         <i class="fas fa-check-circle"></i>
                           Введен в эксплуатацию
                         </p>
-                    </div> 
+                    </div>
                   </div>
                 </div>
               <div class="card  col-sm-6 col-md-4">
@@ -312,10 +317,10 @@
                   <div class="text">
                     <a href="">ЖК «Сосновый лес»</a>
                     <p  class="submenu">
-    
+
                       2 квартал 2018г.
                       </p>
-                  </div> 
+                  </div>
                 </div>
               </div>
               <div class="card  col-sm-6 col-md-4">
@@ -328,7 +333,7 @@
                     <p  class="submenu">
                         4 квартал 2018г.
                       </p>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -347,10 +352,10 @@
                       <div class="text">
                         <a href="">ЖК «Сосновый лес»</a>
                         <p  class="submenu">
-          
+
                           2 квартал 2018г.
                           </p>
-                      </div> 
+                      </div>
                     </div>
                   </div>
                   <div class="card col-sm-6 col-md-4">
@@ -363,7 +368,7 @@
                           <p  class="submenu">
                               4 квартал 2018г.
                             </p>
-                        </div> 
+                        </div>
                       </div>
                   </div>
                   <div class="card col-sm-6 col-md-4">
@@ -377,7 +382,7 @@
                             <i class="fas fa-check-circle"></i>
                               Введен в эксплуатацию
                             </p>
-                        </div> 
+                        </div>
                     </div>
                   </div>
                   <div class="card col-sm-6 col-md-4">
@@ -391,7 +396,7 @@
                           <i class="fas fa-check-circle"></i>
                           Введен в эксплуатацию
                           </p>
-                      </div> 
+                      </div>
                     </div>
                   </div>
                   <div class="card col-sm-6 col-md-4">
@@ -405,7 +410,7 @@
                             <i class="fas fa-check-circle"></i>
                             Введен в эксплуатацию
                             </p>
-                        </div> 
+                        </div>
                       </div>
                   </div>
                   <div class="card col-sm-6 col-md-4">
@@ -419,7 +424,7 @@
                             <i class="fas fa-check-circle"></i>
                             Введен в эксплуатацию
                             </p>
-                        </div> 
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -440,7 +445,7 @@
                               <i class="fas fa-check-circle"></i>
                                 Введен в эксплуатацию
                               </p>
-                          </div> 
+                          </div>
                         </div>
                     </div>
                     <div class="card col-sm-6 col-md-4">
@@ -451,10 +456,10 @@
                           <div class="text">
                             <a href="">ЖК «Сосновый лес»</a>
                             <p  class="submenu">
-              
+
                               2 квартал 2018г.
                               </p>
-                          </div> 
+                          </div>
                         </div>
                     </div>
                     <div class="card col-sm-6 col-md-4">
@@ -468,7 +473,7 @@
                               <i class="fas fa-check-circle"></i>
                               Введен в эксплуатацию
                               </p>
-                          </div> 
+                          </div>
                         </div>
                     </div>
                     <div class="card col-sm-6 col-md-4">
@@ -482,7 +487,7 @@
                               <i class="fas fa-check-circle"></i>
                               Введен в эксплуатацию
                               </p>
-                          </div> 
+                          </div>
                         </div>
                     </div>
                     <div class="card col-sm-6 col-md-4">
@@ -496,7 +501,7 @@
                               <i class="fas fa-check-circle"></i>
                               Введен в эксплуатацию
                               </p>
-                          </div> 
+                          </div>
                         </div>
                     </div>
                     <div class="card col-sm-6 col-md-4">
@@ -509,7 +514,7 @@
                           <p  class="submenu">
                               4 квартал 2018г.
                             </p>
-                        </div> 
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -541,7 +546,7 @@
                 <i class="fas fa-check-circle"></i>
                   Введен в эксплуатацию
                 </p>
-            </div> 
+            </div>
           </div>
       </div>
       <div class="element-item ready card col-sm-6 col-md-4 mrg-btm2">
@@ -555,7 +560,7 @@
                 <i class="fas fa-check-circle"></i>
                   Введен в эксплуатацию
                 </p>
-            </div> 
+            </div>
           </div>
       </div>
       <div class="element-item ready card col-sm-6 col-md-4 mrg-btm2">
@@ -569,7 +574,7 @@
               <i class="fas fa-check-circle"></i>
                 Введен в эксплуатацию
               </p>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="element-item building card col-sm-6 col-md-4 mrg-btm2">
@@ -582,7 +587,7 @@
             <p  class="submenu">
                 2 квартал 2018г.
               </p>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="element-item projects card col-sm-6 col-md-4 mrg-btm2">
@@ -595,7 +600,7 @@
             <p class="submenu">
                                   В проэкте
               </p>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="element-item building card col-sm-6 col-md-4 mrg-btm2">
@@ -608,7 +613,7 @@
             <p  class="submenu">
                 4 квартал 2018г.
               </p>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -636,7 +641,7 @@
                   Полезные лайфхаки для тех кто хочет купить квартиру
                   </p>
                 <p class="mini">25 декабря 2017 г.</p>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="card col-md-3">
@@ -650,7 +655,7 @@
                       Полезные лайфхаки для тех кто хочет купить квартиру
                       </p>
                     <p class="mini">15 декабря 2017 г.</p>
-                </div> 
+                </div>
               </div>
           </div>
           <div class="card col-md-3">
@@ -664,7 +669,7 @@
                     Полезные лайфхаки для тех кто хочет купить квартиру
                     </p>
                   <p class="mini">13 декабря 2017 г.</p>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="card col-md-3">
@@ -678,13 +683,13 @@
                     Полезные лайфхаки для тех кто хочет купить квартиру
                     </p>
                   <p class="mini">7 декабря 2017 г.</p>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
         <a href="" class="button aqua mrg-btm3 btn-pad">Все статьи</a>
       </div><!-- changing-pad -->
-    </div>    
+    </div>
     <div class="container">
       <div class="container">
         <div class="row justify-content-center gray big_text">
@@ -704,7 +709,7 @@
           <h3 class="zagolovok3">Подписаться на рассылку</h3>
           <p class="big_text big_text-white">Будьте вкурсе <span class="hidden"> самых свежих</span> новостей наших объектов</p>
         </div>
-        <form action="" class="col-sm-12 col-md-7">
+        <form class="col-sm-12 col-md-7">
           <div class="flex-container">
             <input type="email" name="email" class=" form-pad" placeholder="Введите email">
             <button class="button button-yellow">Подписаться</button>
@@ -755,7 +760,7 @@
         <div class="number2 number2-footer">
           <a href="">dompatriot@gmail.com</a>
         </div>
-        <p class="text-footer">Россия, г.Тольятти, 
+        <p class="text-footer">Россия, г.Тольятти,
           <br>
           Приморский бульвар, д.57, подъезд 1</p>
             <a href="#forma" class="button red popup button-footer">Обратный звонок</a>
@@ -763,7 +768,7 @@
 
     </div>
     <div class="container container-footer-margin">
- 
+
         <div class="row justify-content-between">
           <div class=" col-md-8 col-xl-5">
             <p class="text-footer text-footer-nomargin"> 2018 © <a href=""> Строительная компания «Патриот».</a> Все права защищены.<br>
@@ -773,7 +778,7 @@
             <div class="padin-top"></div>
             <div class="row  no-gutters justify-content-between">
               <div class=" col-6 col-sm-4 col-md-8">
- 
+
 
             <a href=""><i class="fab fa-vk"> </i></a>
             <a href=""><i class="fab fa-facebook-f"> </i></a>
@@ -800,6 +805,7 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/tab.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/ajaxform.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
