@@ -19,6 +19,18 @@ time, mark, audio, video {
 }
 
 
+h1, .h1 {
+    font-size: 36px;
+}
+
+h2, .h2 {
+    font-size:30px;
+}
+
+h3, .h3 {
+    font-size:24px;
+}
+
 input, textarea, select, button {
     width:100%;
     font: 400 15px Roboto;
@@ -42,13 +54,13 @@ select {
     padding: 9px 16px;
 }
 
-header-bottom {
+.header-bottom {
     margin-top:19px;
 }
 
 body {
     font-family: "Roboto", "FontAwesome", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: lighter;
     font-weight: 400;
     color: #3b3f42;
@@ -65,12 +77,13 @@ p {
 }
 
 a {
-    text-decoration:none;
+    text-decoration:underline;
     color: #52b2d7;
 }
 
 a:hover {
     color: #51a1b4;
+    text-decoration:none;
 }
 a:focus {
     color: white;
@@ -230,6 +243,7 @@ card {
     color:black;
      line-height: 1.1;
     padding-left: 5px;
+    text-decoration: none;
 }
 
 .number2 {
@@ -286,6 +300,10 @@ card {
 
 
 .red:hover {background: #fbba42; color: white;}
+
+h1 .h1 {
+    font-size:36px;
+}
 
 .zagolovok {
     font-size: 36px;
@@ -444,7 +462,7 @@ card {
     cursor:pointer;
 }
 
-.zayavka {
+form h3 {
     text-align: left;
     font-size:30px;
     margin:12px 0;
@@ -553,7 +571,7 @@ li.btn.is-checked {
 
 .footer-yellback {
     background:#fbba42;
-    margin:70px 0px 0px;
+    margin:0px;
     padding:10px 45px;
 
 }
@@ -639,6 +657,9 @@ li.btn.is-checked {
 
 .no-margin {
     margin-bottom: 0px;
+}
+
+.no-padding {
     padding: 0px;
 }
 
@@ -785,7 +806,9 @@ border: 2px solid white;
     overflow: hidden;
 }
 
-
+.white {
+    margin-bottom:70px;
+}
 
 
 
@@ -851,4 +874,8 @@ padding-bottom:10px;
 
 .change2 {
     margin-bottom: 24px;
+}
+
+.footer-blackback li a {
+    text-decoration:none;
 }
