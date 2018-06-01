@@ -82,29 +82,24 @@
   <div id="forma" class="white-popup mfp-with-anim mfp-hide">  <div class="forma col-12">
 
 
-    <form>
+      <form >
           <h2 class="zayavka">Быстрая заявка</h2>
-      <input type="hidden" name="project_name" value="Site Name">
-      <input type="hidden" name="admin_email" value="vasulevus@gmail.com">
-      <input type="hidden" name="form_subject" value="Form Subject">
+          <input type="text" id="firstName" placeholder="Имя" required>
 
-      <input type="text" name="firstName" placeholder="Имя" required>
+          <input type="email" id="email" placeholder="Email" required>
 
-      <input type="email" name="email" placeholder="Email" required>
-
-
-
-      <select name="building" class="options">
+      <select name="radio" class="options">
           <option value="Type of building" disabled>Тип недвижимости</option>
-          <option value="">#</option>
-          <option value="*">Saab</option>
-          <option value="^">Fiat</option>
-          <option value="+">Audi</option>
+          <option value="House">Дом</option>
+          <option value="Flat">Квартира</option>
+          <option value="Room">Комната</option>
         </select>
-        <textarea name="message" class="message" placeholder="Сообщение" ></textarea>
-      <button type="submit" class="submit">
-        Отправить заявку</button>
-    </form>
+        <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение" ></textarea>  
+          <button type="submit" class="submit" id="send">
+                  Отправить заявку</button>
+      <div id='loadBar'></div> 
+
+  </form>
   </div></div>
 
 
@@ -124,21 +119,24 @@
       <div class="col-lg-4">
         <div class="forma">
 
-          <form>
-                      <h2 class="zayavka">Быстрая заявка</h2>
-            <input type="text" name="FirstName" placeholder="Имя" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <select name="building" class="options">
+            <form >
+                <h2 class="zayavka">Быстрая заявка</h2>
+                <input type="text" id="firstName" placeholder="Имя" required>
+  
+                <input type="email" id="email" placeholder="Email" required>
+
+            <select name="radio" class="options">
                 <option value="Type of building" disabled>Тип недвижимости</option>
-                <option value="">#</option>
-                <option value="*">Saab</option>
-                <option value="^">Fiat</option>
-                <option value="+">Audi</option>
+                <option value="House">Дом</option>
+                <option value="Flat">Квартира</option>
+                <option value="Room">Комната</option>
               </select>
-              <textarea name="message" class="message" placeholder="Сообщение" ></textarea>
-            <button type="submit" class="submit">
-              Отправить заявку</button>
-          </form>
+              <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение" ></textarea>  
+                <button type="submit" class="submit" id="send">
+                        Отправить заявку</button>
+            <div id='loadBar'></div> 
+
+        </form>
         </div>
       </div>
     </div>
@@ -805,7 +803,7 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/tab.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/ajaxform.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
