@@ -79,28 +79,28 @@
     </div><!--header-bottom-->
   </header>
   <!-- Popup itself -->
-  <div id="forma" class="white-popup mfp-with-anim mfp-hide forma">
-    <div class="forma col-12">
-      <form class="js-quick-order">
-        <h2 class="zayavka">Быстрая заявка</h2>
-        <input type="text" class="firstName" placeholder="Имя" required>
+  <div id="forma" class="white-popup mfp-with-anim mfp-hide">  <div class="forma col-12">
 
-        <input type="email" class="email" placeholder="Email" required>
 
-        <select name="radio" class="options">
+      <form >
+          <h2 class="zayavka">Быстрая заявка</h2>
+          <input type="text" id="firstName" placeholder="Имя" required>
+
+          <input type="email" id="email" placeholder="Email" required>
+
+      <select name="radio" class="options">
           <option value="Type of building" disabled>Тип недвижимости</option>
           <option value="House">Дом</option>
           <option value="Flat">Квартира</option>
           <option value="Room">Комната</option>
         </select>
-        <textarea name="textarea" class="textarea" placeholder="Сообщение"></textarea>
-        <button type="submit" class="send submit">
-          Отправить заявку</button>
-        <div class='loadBar'></div>
+        <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение" ></textarea>  
+          <button type="submit" class="submit" id="send">
+                  Отправить заявку</button>
+      <div id='loadBar'></div> 
 
-      </form>
-    </div>
-  </div>
+  </form>
+  </div></div>
 
 
 
@@ -119,11 +119,11 @@
       <div class="col-lg-4">
         <div class="forma">
 
-            <form  class="js-quick-order">
+            <form >
                 <h2 class="zayavka">Быстрая заявка</h2>
-                <input type="text" class="firstName" placeholder="Имя" required>
+                <input type="text" id="firstName" placeholder="Имя" required>
   
-                <input type="email" class="email" placeholder="Email" required>
+                <input type="email" id="email" placeholder="Email" required>
 
             <select name="radio" class="options">
                 <option value="Type of building" disabled>Тип недвижимости</option>
@@ -131,10 +131,10 @@
                 <option value="Flat">Квартира</option>
                 <option value="Room">Комната</option>
               </select>
-              <textarea name="textarea" class="textarea" placeholder="Сообщение" ></textarea>  
-                <button type="submit" class="send submit">
+              <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение" ></textarea>  
+                <button type="submit" class="submit" id="send">
                         Отправить заявку</button>
-            <div class='loadBar'></div> 
+            <div id='loadBar'></div> 
 
         </form>
         </div>
@@ -156,7 +156,7 @@
           <div id="all">
             <div class="container changing-pad">
               <div class="row justify-content-between">
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                   <div class="back">
                     <a href="">
                       <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
@@ -170,7 +170,7 @@
                     </div>
                   </div>
                 </div>
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                     <div class="back">
                       <a href="">
                         <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
@@ -184,7 +184,7 @@
                       </div>
                     </div>
                 </div>
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                   <div class="back">
                     <a href="">
                       <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
@@ -198,7 +198,7 @@
                     </div>
                   </div>
                 </div>
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                   <div class="back">
                     <a href="">
                       <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
@@ -212,7 +212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                     <div class="back">
                       <a href="">
                         <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
@@ -226,7 +226,7 @@
                       </div>
                     </div>
                 </div>
-                <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                <div class="card col-sm-6 col-md-4">
                   <div class="back">
                     <a href="">
                       <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
@@ -250,7 +250,7 @@
           <div id="ready">
             <div class="container changing-pad">
             <div class="row justify-content-between">
-              <div class=" card col-sm-6 col-md-4 mrg-btm2">
+              <div class="card col-sm-6 col-md-4">
                   <div class="back">
                     <a href="">
                       <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
@@ -342,7 +342,7 @@
               <div class="container changing-pad">
                 <div class="row justify-content-between">
 
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                     <div class="back">
                       <a href="">
                         <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
@@ -356,7 +356,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                       <div class="back">
                         <a href="">
                           <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
@@ -369,7 +369,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                     <div class="back">
                         <a href="">
                           <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
@@ -383,7 +383,7 @@
                         </div>
                     </div>
                   </div>
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                     <div class="back">
                       <a href="">
                         <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
@@ -397,7 +397,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                       <div class="back">
                         <a href="">
                           <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
@@ -411,7 +411,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                  <div class="card col-sm-6 col-md-4">
                       <div class="back">
                         <a href="">
                           <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
@@ -432,7 +432,7 @@
           <div id="projects">
               <div class="container changing-pad">
                   <div class="row justify-content-between">
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                         <div class="back">
                           <a href="">
                             <img src="img/11449.jpg" alt="ЖК 'Песочный замок'">
@@ -446,7 +446,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                         <div class="back">
                           <a href="">
                             <img src="img/12808.jpg" alt="ЖК 'Сосновый лес'">
@@ -460,7 +460,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                         <div class="back">
                           <a href="">
                             <img src="img/14315.jpg" class="" alt="ЖК 'Два Квартала'">
@@ -474,7 +474,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                         <div class="back">
                           <a href="">
                             <img src="img/13020.jpg" alt="ЖК 'Британский дом'">
@@ -488,7 +488,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                         <div class="back">
                           <a href="">
                             <img src="img/16230.jpg" alt="ЖК 'Мир минимализма'">
@@ -502,7 +502,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class=" card col-sm-6 col-md-4 mrg-btm2">
+                    <div class="card col-sm-6 col-md-4">
                       <div class="back">
                         <a href="">
                           <img src="img/13099.jpg" alt="ЖК 'Мечта поэта'">
