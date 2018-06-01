@@ -62,8 +62,8 @@
         margin: 19px 0px;
     }
     
-    .number1-footer {
-        font-size:20px;
+    .number1-footer a {
+        font-size:18px;
         padding-left:9px;
         text-align:left;
     }
@@ -85,6 +85,8 @@
     }
     .no-margin {
         margin-bottom:0;
+        padding: 0 15px;
+
     }
     .big_text {
         font-size:14px;
@@ -99,6 +101,14 @@
 
     .card {
         margin-bottom: 20px;
+    }
+
+    .hidden {
+        font-size: 14px;
+    }
+
+    .fa-chevron-up {
+        margin-left: 0;
     }
 }
 
