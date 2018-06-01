@@ -60,6 +60,12 @@ body {
     color:  #3b3f42;
 }
 
+/* h1, .h1 {
+    font-size: 36px;
+}
+
+h2,  */
+
 p {
     margin-bottom: 1.5em;
 }
@@ -150,24 +156,55 @@ card {
     margin-bottom: 20px;
 }
 
+card
+
 .changing-pad {
     padding:0px;
+    overflow: hidden;
 }
 
 .back {
     padding: 0;
-
+    overflow: hidden;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
     line-height: 1.35;
     font-size:15px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     text-align:left;
 
 }
 
+.back img {
+
+    width: 100%;
+    transition: all .2s ease-in-out; 
+    display:block;
+
+}
+
+.back a {
+    overflow: hidden;
+    display: block;
+}
+
+.back a:hover {
+    /* filter: brightness(50%); */
+    text-decoration: underline;
+    display:block;
+}
+
+.back a:hover img, .back a:focus img {
+    opacity: 0.5;
+    cursor:pointer;
+    transform: scale(1.1); 
+}
+
+
 .text {
     padding:6px 29px 1px;
     line-height: 1.7;
+
+    background-color:white;
 }
 
 .text .fa {
@@ -178,6 +215,7 @@ card {
 
 .text a {
     color:#56b9d0;
+
 }
 
 .pad-top {
@@ -204,15 +242,7 @@ card {
     padding-bottom:13px;
 }
 
-.back img {
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-}
 
-.back a:hover {
-    /* filter: brightness(50%); */
-    text-decoration: underline;
-}
 .change {
     margin-bottom: 19px;
 }
@@ -380,40 +410,12 @@ card {
     margin: 20px -1px;
 }
 
-/* .slick-arrow {
-    position: absolute;
-    background-color: #fbba42;
-    top:45%;
-    color:white;
-    width:130px;
-    z-index:1;
-    border:none;
-    border-radius:5px;
-}
-
-.slick-prev {
-    left:33px;
-}
-
-.slick-prev:hover {
-    background-color: #b7832f;
-    cursor:pointer;
-}
-
-.slick-next {
-    left:613px;
-}
 
 
-.slick-next:hover {
-    background-color: #b7832f;
-    cursor:pointer;
-} */
-
-#forma a:focus {
+/* #forma a:focus {
     color:white;
 }
-
+*/
 .forma {
     margin-top: 21px;
     padding: 10px 29px 5px;
@@ -421,7 +423,7 @@ card {
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
 }
 
-.message {
+.textarea {
     margin: 14px 0;
     height:80px;
 
