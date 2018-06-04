@@ -15,8 +15,41 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 18px;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    text-align: left;
+    
 }
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    counter-reset: section;  
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --main-bg-color: #f2f2f2;
+    --yellow-color: #fbba42;
+}
+
 
 
 h1, .h1 {
@@ -895,6 +928,8 @@ padding-bottom:10px;
 
 .main-text-body {
     background-color:white;
+    padding: 28px;
+    margin-top: 25px;
 }
 
 .strichka {
@@ -909,4 +944,22 @@ padding-bottom:10px;
     display:inline-block;
     margin: 16px 0;
     font-weight: lighter;
+}
+
+.mark {
+text-align: center;
+}
+
+.base {
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+.content {
+    padding: 0 30px;
+}
+
+.fa-sort-amount-down {
+    color: var(--yellow-color);
+    font-size:48px;
 }
