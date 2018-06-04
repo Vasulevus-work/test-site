@@ -4,7 +4,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 18px;
+	font-size: 16px;
     vertical-align: baseline;
     text-align: left;
     
@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    counter-reset: section;  
 }
 
 blockquote, q {
@@ -48,6 +47,7 @@ table {
 :root {
     --main-bg-color: #f2f2f2;
     --yellow-color: #fbba42;
+    --bloody: #F24C27;
 }
 
 
@@ -108,6 +108,8 @@ body {
 
 p {
     margin-bottom: 1.5em;
+    font-weight: lighter;
+    line-height: 1.5em;
 }
 
 a {
@@ -261,7 +263,7 @@ card {
     text-decoration: underline;
 }
 .change {
-    margin-bottom: 19px;
+    margin-bottom: 22px;
 }
 
 
@@ -277,6 +279,9 @@ card {
     margin-left:30px;
 }
 
+.number1 {
+    text-align: center;
+}
 
 .number1 a{
     font-size: 28px;
@@ -305,6 +310,7 @@ card {
     color: #52b2d7;
     text-decoration: underline;
     font-weight: 300;
+    text-align: center;
 }
 
 .number2 a:hover {
@@ -330,7 +336,7 @@ card {
 
 
 .red {
-    margin-top: 20px;
+    margin-top: 22px;
     background-color: red;
 }
 
@@ -439,6 +445,9 @@ h1 .h1 {
     color:white;
 }
 
+.lg-screen {
+    margin-bottom:1px;
+}
 
 .image {
     margin: 20px -1px;
@@ -929,7 +938,7 @@ padding-bottom:10px;
 .main-text-body {
     background-color:white;
     padding: 28px;
-    margin-top: 25px;
+    margin-top: 21px;
 }
 
 .strichka {
@@ -942,7 +951,7 @@ padding-bottom:10px;
     color:black;
     font-size: 13px;
     display:inline-block;
-    margin: 16px 0;
+    margin: 16px 0 14px;
     font-weight: lighter;
 }
 
@@ -953,13 +962,56 @@ text-align: center;
 .base {
     background-color: var(--main-bg-color);
     border-radius: 5px;
+    padding:2px;
 }
 
 .content {
-    padding: 0 30px;
+
+    line-height: 1.5em
 }
 
 .fa-sort-amount-down {
     color: var(--yellow-color);
     font-size:48px;
 }
+
+.content ol {
+
+    counter-reset: section;  /* Creates a new instance of the section counter with each olelement */
+    padding-left:27px;
+    list-style-type: none;
+  }
+  
+  .content li::before {
+    counter-increment: section;   
+
+    content: counters(section, ".") ".";
+
+    color: var(--bloody);
+    font-weight: bold;
+                                              
+  }
+
+
+  .content h2 {
+      text-align: left;
+      padding-top: 27px;
+      padding-left: 25px;
+      
+      padding-bottom: 19px;
+  }
+
+  .content ol li {
+      line-height: 30px;
+  }
+
+  .side-ef {
+      width:15%;
+      padding-top:81px;
+  }
+
+  .other {
+      width:85%;
+
+      border-radius: 0 5px 5px 0;
+  }
