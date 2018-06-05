@@ -48,6 +48,7 @@ table {
     --main-bg-color: #f2f2f2;
     --yellow-color: #fbba42;
     --bloody: #F24C27;
+    --our-blue:#52b2d7;
 }
 
 
@@ -69,7 +70,7 @@ h2, .h2 {
 h3, .h3 {
     font-size:24px;
     text-align:left;
-    margin-top: 39px;
+    margin-top: 36px;
     margin-bottom:15px;
 }
 
@@ -138,12 +139,56 @@ a, input, button {
 }
 
 
+table{
+    width:100%;
+}
 
+th {
+    background-color: var(--main-bg-color);
+    padding:12px;
+    font-weight: normal;
+}
+td {
+    padding:12px;
+}
 
 img {
     width:100%;
     height: auto;  
 }
+
+blockquote {
+    background-color: var(--main-bg-color);
+    padding: 22px;
+    position: relative;
+    font-weight: lighter;
+    padding-left: 121px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    margin-top: 21px;
+}
+
+blockquote::before {
+    content: '\f10e';
+    font-family: Font Awesome\ 5 Free;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    top: 27px;
+    left: 38px;
+    display: block;
+    font-size: 45px;
+    color:var(--our-blue);
+    font-weight: 900;
+
+}
+
 
 .container {
     text-align: center;
@@ -253,6 +298,11 @@ card {
 
 }
 
+li {
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 25px;
+}
 
 
 .mini {
@@ -723,6 +773,35 @@ li.btn.is-checked {
 
 
 
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding-left: 26px;
+
+}
+
+ul li::before {
+    content: '\f058';
+    font-family: Font Awesome\ 5 Free;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    left: -25px;
+    top:5px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    color:var(--our-blue);
+    font-weight: 900;
+
+}
+
 .no-padding {
     padding: 0px;
 }
@@ -999,7 +1078,7 @@ ol {
 
   }
   
-li::before {
+ol li::before {
     counter-increment: section;   
 
     content: counters(section, ".") ".";
@@ -1032,9 +1111,16 @@ ol li {
 .other ol li ol {
     list-style-type:none;
     margin-left:16px;
-    margin-bottom:0;
+    margin-top:6px;
     line-height: 30px;
+    margin-bottom:0;
 }
+
+.other ol li {
+    padding-bottom:6px;
+    margin:0;
+}
+
 
   .margin-bottom-0 {
       margin-bottom:0;
@@ -1060,12 +1146,30 @@ ol li {
       float:left;
       max-width: 270px;
       margin-right:30px;
+      margin-bottom: 20px;
+      background-color: var(--main-bg-color);
+      border-radius:10px;
+  }
+
+  .align-right {
+    float:right;
+    max-width: 270px;
+    margin-left:30px;
+    margin-bottom: 20px;
+    background-color: var(--main-bg-color);
+    border-radius:10px;
   }
 
 
   figcaption {
+    
     padding-left: 20px;
     font-size: 14px;
     padding-bottom:24px;
+    background-color:var(--main-bg-color);
+    border-radius: 0 0 10px 10px;
   }
   
+  .column ul li::before, .column4 ul li:before{
+      display:none;
+  }
