@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -55,14 +55,22 @@ table {
 h1, .h1 {
     font-size: 36px;
     text-align:left;
+    margin-top:15px;
+    margin-bottom:25px;
 }
 
 h2, .h2 {
     font-size:30px;
+    text-align:left;
+
+    margin-bottom:20px;
 }
 
 h3, .h3 {
     font-size:24px;
+    text-align:left;
+    margin-top: 39px;
+    margin-bottom:15px;
 }
 
 input, textarea, select, button {
@@ -115,6 +123,7 @@ p {
 a {
     text-decoration:underline;
     color: #52b2d7;
+    font-size: 16px;
 }
 
 a:hover {
@@ -167,9 +176,7 @@ img {
     flex-grow: 1;
 }
 
-h2 {
-    text-align:center;
-}
+
 
 .pack {
     padding: 9px 0 0 0;
@@ -277,6 +284,10 @@ card {
 
 .margin-left-30 {
     margin-left:30px;
+}
+
+.margin-top-30 {
+    margin-top:30px;
 }
 
 .number1 {
@@ -710,13 +721,13 @@ li.btn.is-checked {
     font-weight: lighter;
 }
 
-.no-margin {
-    margin-bottom: 0px;
-}
+
 
 .no-padding {
     padding: 0px;
 }
+
+
 
 .column-padding {
     padding-left:57px;
@@ -782,7 +793,7 @@ li.btn.is-checked {
 .row p a {
     color: #52b2d7;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: lighter;
 }
 
@@ -935,10 +946,15 @@ padding-bottom:10px;
     text-decoration:none;
 }
 
+/*-------post.html------*/
+
+
 .main-text-body {
     background-color:white;
-    padding: 28px;
-    margin-top: 21px;
+    line-height: 1.5;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 0 0 35px;
 }
 
 .strichka {
@@ -951,7 +967,7 @@ padding-bottom:10px;
     color:black;
     font-size: 13px;
     display:inline-block;
-    margin: 16px 0 14px;
+    margin-top: 16px;
     font-weight: lighter;
 }
 
@@ -963,26 +979,27 @@ text-align: center;
     background-color: var(--main-bg-color);
     border-radius: 5px;
     padding:2px;
+    margin-bottom: 21px;
 }
 
-.content {
 
-    line-height: 1.5em
-}
 
 .fa-sort-amount-down {
     color: var(--yellow-color);
     font-size:48px;
 }
 
-.content ol {
+ol {
 
     counter-reset: section;  /* Creates a new instance of the section counter with each olelement */
-    padding-left:27px;
+    padding-left: 0px;
     list-style-type: none;
+    margin-top:0px;
+    margin-bottom:34px;
+
   }
   
-  .content li::before {
+li::before {
     counter-increment: section;   
 
     content: counters(section, ".") ".";
@@ -992,17 +1009,10 @@ text-align: center;
                                               
   }
 
-
-  .content h2 {
-      text-align: left;
-      padding-top: 27px;
-      padding-left: 25px;
-      
-      padding-bottom: 19px;
-  }
-
-  .content ol li {
-      line-height: 30px;
+ol li {
+      line-height: 24px;
+      font-weight: lighter;
+      margin-bottom:24px;
   }
 
   .side-ef {
@@ -1012,6 +1022,50 @@ text-align: center;
 
   .other {
       width:85%;
-
+      line-height: 1.5em;
       border-radius: 0 5px 5px 0;
+      padding:25px;
+      background:white;
   }
+
+
+.other ol li ol {
+    list-style-type:none;
+    margin-left:16px;
+    margin-bottom:0;
+    line-height: 30px;
+}
+
+  .margin-bottom-0 {
+      margin-bottom:0;
+  }
+
+
+  .image-card {
+    width: 33%;
+    float: left;
+    margin: 26px 33px 31px 0;
+  }
+
+  .set-new {
+      padding:26px 0;
+
+  }
+
+  .lg-screen li:before {
+      display: none;
+  }
+
+  .align-left {
+      float:left;
+      max-width: 270px;
+      margin-right:30px;
+  }
+
+
+  figcaption {
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom:24px;
+  }
+  
