@@ -41,7 +41,9 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+    border-spacing: 0;
+    width:100%;
+    margin-bottom:28px;
 }
 
 :root {
@@ -139,17 +141,15 @@ a, input, button {
 }
 
 
-table{
-    width:100%;
-}
+
 
 th {
     background-color: var(--main-bg-color);
-    padding:12px;
+    padding:13px 24px;
     font-weight: normal;
 }
 td {
-    padding:12px;
+    padding:12px 23px;
 }
 
 img {
@@ -184,7 +184,7 @@ blockquote::before {
     left: 38px;
     display: block;
     font-size: 45px;
-    color:var(--our-blue);
+    color:var(--yellow-color);
     font-weight: 900;
 
 }
@@ -778,7 +778,7 @@ ul {
     list-style-type: none;
     margin:0;
     padding-left: 26px;
-
+    margin-bottom: 31px;
 }
 
 ul li::before {
@@ -1165,7 +1165,7 @@ ol li {
     
     padding-left: 20px;
     font-size: 14px;
-    padding-bottom:24px;
+    padding-bottom:7px;
     background-color:var(--main-bg-color);
     border-radius: 0 0 10px 10px;
   }

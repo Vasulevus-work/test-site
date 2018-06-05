@@ -24,7 +24,6 @@
       }
 
   });
-
      $('select').niceSelect();
      $(".flexnav").flexNav();
 
