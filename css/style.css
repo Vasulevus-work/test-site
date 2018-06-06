@@ -265,7 +265,7 @@ card {
 
 .back {
     padding: 0;
-
+    margin-bottom:31px;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
     line-height: 1.35;
     font-size:15px;
@@ -303,7 +303,17 @@ card {
 
 .submenu {
     font-size: 15px;
+    margin-bottom: 28px;
 
+}
+
+.submenu.pad2{
+    margin-bottom: 1px;
+}
+
+
+.for-marg .back {
+    margin-bottom:29px;
 }
 
 li {
@@ -316,11 +326,13 @@ li {
 .mini {
     font-size: 13px;
     padding-bottom:13px;
+    margin-bottom: 20px;
 }
 
 .back img {
     border-radius: 10px 10px 0px 0px;
     width: 100%;
+    
 }
 
 .back a:hover {
@@ -424,6 +436,7 @@ li {
 .aqua {
     background-color:#56b9d0;
     border:none;
+    margin-top: 2px;
 }
 
 .aqua:hover {
@@ -440,8 +453,9 @@ h1 .h1 {
 
 .zagolovok {
     font-size: 36px;
-    margin: 15px 0 4px;
     text-align: center;
+    margin: 30px 0 9px;
+
 }
 
 .zagolovok4 {
@@ -455,16 +469,16 @@ h1 .h1 {
 }
 
 .c-m-b {
-    margin-bottom:3px;
+    margin-bottom:0px;
 }
 
 
 .mrg-top2 {
-    margin-top: 61px;
+    margin-top: 67px;
 }
 
 .mrg-top3 {
-    margin-top:72px;
+    margin-top:78px;
 
 }
 
@@ -533,7 +547,7 @@ h1 .h1 {
 }
 
 .image {
-    margin: 20px -1px;
+    margin: 17px -1px 12px;
 }
 
 /* .slick-arrow {
@@ -618,7 +632,7 @@ h1 .h1 {
 form h3 {
     text-align: left;
     font-size:30px;
-    margin: 12px 0 17px;
+    margin: 14px 0 16px;
 
     font-weight:bold;
 }
@@ -648,7 +662,7 @@ form h3 {
 
 .smallMenu {
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     margin-top: 5px;
     line-height: 25px;
     padding: 0;
@@ -666,6 +680,7 @@ form h3 {
 
     text-align:center;
     padding: 0 15px;
+    margin-bottom: 9px;
 }
 
 .smallMenu li a {
@@ -704,15 +719,16 @@ li.btn.is-checked {
 
 .gray {
     background:#f2f2f2;
-    padding: 22px 30px 20px;
+    padding: 11px 30px 25px;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
 }
 
 .zagolovok-min {
     font-size:30px;
     text-align: center;
-    margin-top:5px;
+    margin-top: 20px;
     margin-bottom:16px;
+    line-height: 34px;
 }
 
 .big_text p {
@@ -1070,7 +1086,7 @@ padding-bottom:10px;
 }
 
 .change2 {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
 
 .footer-blackback li a {
@@ -1336,4 +1352,12 @@ ul.ya-share2__list li::before{
 
 ul.ya-share2__list.ya-share2__list_direction_horizontal {
     margin-bottom:1px;
+}
+
+.element-item .back {
+    margin-bottom:20px;
+}
+
+.grid .element-item {
+    padding-top:10px;
 }
