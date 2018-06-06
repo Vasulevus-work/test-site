@@ -443,13 +443,11 @@ h1 .h1 {
 .zagolovok {
     font-size: 36px;
     margin: 15px 0 4px;
-    text-align: center;
 }
 
 .zagolovok4 {
     font-size: 36px;
     margin: 13px 0 5px;
-    text-align: center;
 }
 
 .mrg-top {
@@ -682,10 +680,6 @@ form h3 {
 .smallMenu li a:hover, .smallMenu li a:active, .smallMenu li a:focus, .smallMenu li a.active {
     border-bottom: 0;
     color:black;
-}
-
-.smallMenu li::before {
-    display:none;
 }
 
 li.btn.is-checked {

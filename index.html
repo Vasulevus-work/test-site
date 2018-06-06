@@ -53,7 +53,7 @@
 
               <div class="number1 pad-left">
                 <a href="tel:8&nbsp;(8482)&nbsp;61-37-37">8 (8482) 61-37-37</a>
-
+                <br>
                 <a href="tel:8&nbsp;(8482)&nbsp;62-48-48">8 (8482) 62-48-48</a>
               </div>
               <div class="number2">
@@ -120,9 +120,9 @@
 
       <form>
         <h3>Быстрая заявка</h3>
-        <input type="text" class="firstName" placeholder="Имя" required>
+        <input type="text" id="firstName" placeholder="Имя" required>
 
-        <input type="email" class="email" placeholder="Email" required>
+        <input type="email" id="email" placeholder="Email" required>
 
         <select name="radio" class="options">
           <option value="Type of building" disabled>Тип недвижимости</option>
@@ -130,8 +130,8 @@
           <option value="Flat">Квартира</option>
           <option value="Room">Комната</option>
         </select>
-        <textarea name="textarea" class="message textarea" placeholder="Сообщение"></textarea>
-        <button type="submit" class="submit send">
+        <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение"></textarea>
+        <button type="submit" class="submit" id="send">
           Отправить заявку</button>
         <div id='loadBar'></div>
 
@@ -158,9 +158,9 @@
 
             <form>
               <h3>Быстрая заявка</h3>
-              <input type="text" class="firstName" placeholder="Имя" required>
+              <input type="text" id="firstName" placeholder="Имя" required>
 
-              <input type="email" class="email" placeholder="Email" required>
+              <input type="email" id="email" placeholder="Email" required>
 
               <select name="radio" class="options">
                 <option value="Type of building" disabled>Тип недвижимости</option>
@@ -168,8 +168,8 @@
                 <option value="Flat">Квартира</option>
                 <option value="Room">Комната</option>
               </select>
-              <textarea name="textarea" class="message" class="textarea" placeholder="Сообщение"></textarea>
-              <button type="submit" class="submit" class="send">
+              <textarea name="textarea" class="message" id="textarea" placeholder="Сообщение"></textarea>
+              <button type="submit" class="submit" id="send">
                 Отправить заявку</button>
               <div id='loadBar'></div>
 
