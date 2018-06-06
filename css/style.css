@@ -441,11 +441,13 @@ h1 .h1 {
 .zagolovok {
     font-size: 36px;
     margin: 15px 0 4px;
+    text-align: center;
 }
 
 .zagolovok4 {
     font-size: 36px;
     margin: 13px 0 5px;
+    text-align: center;
 }
 
 .mrg-top {
@@ -673,6 +675,10 @@ form h3 {
     line-height: 1px;
     text-decoration: none;
     border-bottom: 1px dashed #56b9d0;
+}
+
+.smallMenu li::before {
+    display:none;
 }
 
 .smallMenu li a:hover, .smallMenu li a:active, .smallMenu li a:focus, .smallMenu li a.active {
@@ -962,14 +968,15 @@ border: 2px solid white;
     margin-left: 20px;
 }
 
-
-
-
-
  a .fa-chevron-up:hover{
     color:#3b3f42;
     background-color:white;
 }
+
+.fa-chevron-up::before {
+    margin-left:25px;
+}
+
 
 .padin-top {
     padding-top: 29px;
@@ -1227,14 +1234,8 @@ ol li {
   
 
 
-<<<<<<< HEAD
-
-  .padding-bottom-72{
-    padding-bottom: 72px;
-=======
   .padding-bottom-67{
       padding-bottom: 67px;
->>>>>>> parent of 715178f... fix home
   }
 
 .ya-share2__list_direction_horizontal {
@@ -1336,8 +1337,3 @@ ul.ya-share2__list li::before{
 ul.ya-share2__list.ya-share2__list_direction_horizontal {
     margin-bottom:1px;
 }
-
-  .column ul li::before, .column4 ul li:before{
-      display:none;
-  }
-
