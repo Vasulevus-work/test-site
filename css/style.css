@@ -1230,7 +1230,7 @@ ol li {
     border-radius: 0 0 10px 10px;
   }
   
-<<<<<<< HEAD
+
 
 
   .padding-bottom-72{
@@ -1336,8 +1336,8 @@ ul.ya-share2__list li::before{
 ul.ya-share2__list.ya-share2__list_direction_horizontal {
     margin-bottom:1px;
 }
-=======
+
   .column ul li::before, .column4 ul li:before{
       display:none;
   }
->>>>>>> parent of 98c5473... end of day
+
