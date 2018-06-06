@@ -55,11 +55,18 @@ table {
 
 
 
-h1, .h1 {
+h1 {
     font-size: 36px;
     text-align:left;
     margin-top:15px;
     margin-bottom:25px;
+}
+
+.h1 {
+    font-size: 36px;
+    text-align:left;
+    margin-top:15px;
+    margin-bottom:23px;
 }
 
 h2, .h2 {
@@ -118,7 +125,7 @@ body {
 }
 
 p {
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
     font-weight: lighter;
     line-height: 1.5em;
 }
@@ -154,7 +161,8 @@ td {
 
 img {
     width:100%;
-    height: auto;  
+    height: auto;
+
 }
 
 blockquote {
@@ -372,10 +380,22 @@ li {
     text-decoration: underline;
     font-weight: 300;
     text-align: center;
+ 
 }
 
 .number2 a:hover {
     text-decoration: none;
+}
+
+
+.number2-footer {
+    padding-right:0;
+    text-align: left;
+    margin-left:10px;
+}
+
+.number2-footer a {
+    text-align: left;
 }
 
 .button {
@@ -550,9 +570,24 @@ h1 .h1 {
 
 .forma {
     margin-top: 21px;
-    padding: 10px 29px 5px;
+    padding: 10px 29px 6px;
     background-color: #ffffff;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
+}
+
+.forma2 {
+    margin-top: 32px;
+    padding: 10px 29px 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
+}
+
+.forma2 h3 {
+    text-align: left;
+    font-size: 29px;
+    margin: 12px 0 17px;
+    letter-spacing: -1px;
+
 }
 
 .message {
@@ -581,7 +616,8 @@ h1 .h1 {
 form h3 {
     text-align: left;
     font-size:30px;
-    margin:12px 0;
+    margin: 12px 0 17px;
+
     font-weight:bold;
 }
 
@@ -748,7 +784,8 @@ li.btn.is-checked {
 .column ul {
     list-style-type: none;
     text-align:left;
-
+    padding-left:0;
+    margin-bottom:7px;
 }
 
 .column li {
@@ -756,6 +793,7 @@ li.btn.is-checked {
     color:white;
     margin:10px 20px 12px 0;
     font-weight: lighter;
+    line-height: 18px;
 }
 
 .column .main-li {
@@ -771,14 +809,16 @@ li.btn.is-checked {
     font-weight: lighter;
 }
 
-
+.column ul li::before, .column4 ul li:before{
+    display:none;
+}
 
 
 ul {
     list-style-type: none;
     margin:0;
     padding-left: 26px;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
 }
 
 ul li::before {
@@ -829,27 +869,29 @@ ul li::before {
 
     font-size: 32px;
     font-weight: bold;
-    color:white;
-    padding-top:35px;
-    text-align:left;
-    padding-left:5px;
-    padding-top: 42px;
+    color: white;
+    padding-top: 35px;
+    text-align: left;
+    padding-left: 11px;
+    padding-top: 46px;
 
 }
 
 .number1-footer a{
     color:white;
-    font-size: 31px;
+    font-size: 32px;
+    width:272px;
 }
 
 .text-footer {
     color: white;
-    margin-top: 11px;
+    margin-top: 14px;
     margin-left: 11px;
     font-size: 15px;
     font-weight: lighter;
     text-align: left;
     line-height: 1.7;
+
 }
 
 .button-footer {
@@ -857,23 +899,26 @@ ul li::before {
     margin-top:0;
 }
 
-.number2-footer {
-    padding-right:0;
-    text-align: left;
-    margin-left:10px;
-}
 
-.text-footer-nomargin {
+
+.text-footer-margin {
     margin-left: 0;
-    margin-top: 13px;
+    margin-top: 27px;
+
 
 }
+
+
 
 .row p a {
     color: #52b2d7;
     text-decoration: underline;
-    font-size: 16px;
+
     font-weight: lighter;
+}
+
+.text-footer-margin a{
+    font-size:15px;
 }
 
 .row p a:hover {
@@ -927,7 +972,7 @@ border: 2px solid white;
 }
 
 .padin-top {
-    padding-top: 14px;
+    padding-top: 29px;
 }
 
 .container-footer-margin {
@@ -1029,11 +1074,11 @@ padding-bottom:10px;
 
 
 .main-text-body {
-    background-color:white;
+    background-color: white;
     line-height: 1.5;
     padding: 25px 30px;
     border-radius: 5px;
-    margin: 0 0 35px;
+    margin: 0 0 40px;
 }
 
 .strichka {
@@ -1058,7 +1103,7 @@ text-align: center;
     background-color: var(--main-bg-color);
     border-radius: 5px;
     padding:2px;
-    margin-bottom: 21px;
+    margin-bottom: 14px;
 }
 
 
@@ -1107,6 +1152,20 @@ ol li {
       background:white;
   }
 
+  .other h2 {
+    margin-bottom: 25px;
+  }
+   
+  .other ol {
+      margin-bottom:0px;
+  }
+
+
+  .other ol li {
+    padding-bottom: 5px;
+    margin:0;
+}
+
 
 .other ol li ol {
     list-style-type:none;
@@ -1116,10 +1175,6 @@ ol li {
     margin-bottom:0;
 }
 
-.other ol li {
-    padding-bottom:6px;
-    margin:0;
-}
 
 
   .margin-bottom-0 {
@@ -1170,9 +1225,7 @@ ol li {
     border-radius: 0 0 10px 10px;
   }
   
-  .column ul li::before, .column4 ul li:before{
-      display:none;
-  }
+
 
   .padding-bottom-67{
       padding-bottom: 67px;
@@ -1193,17 +1246,28 @@ ul.ya-share2__list li::before{
     color:wheat;
 }
 
+
+.ya-share2__icon{
+    padding:10px;
+    margin-left: 10px;
+}
+
+
 .ya-share2__icon::before{
     top: 0;
-    left: -28px;
+    left: -26px;
     background-color: #56b9d0;
     color:white;
-    padding:10px;
+    padding:12px;
+    border-radius: 5px 0 0 5px;
 }
 
 .ya-share2__counter {
     background-color: #51a1b4;
-    padding:10px;
+    padding: 11px 17px 10px;
+    margin-left: 5px;
+    border-radius: 0 5px 5px 0;
+
 }
 
 
@@ -1218,9 +1282,9 @@ ul.ya-share2__list li::before{
     text-rendering: auto;
     line-height: 1;
     position: absolute;
-
+    border-radius:5px;
     display: block;
-    font-size: 23px;
+    font-size: 16px;
 }
 
 .ya-share2__item_service_facebook .ya-share2__badge .ya-share2__icon::before{
@@ -1234,9 +1298,9 @@ ul.ya-share2__list li::before{
     text-rendering: auto;
     line-height: 1;
     position: absolute;
-
+    padding:12px 16px;
     display: block;
-    font-size: 23px;
+    font-size: 16px;
 }
 .ya-share2__item_service_vkontakte .ya-share2__badge .ya-share2__icon::before{
     content:'\f189';
@@ -1251,7 +1315,7 @@ ul.ya-share2__list li::before{
     position: absolute;
 
     display: block;
-    font-size: 23px;
+    font-size: 16px;
 }
 
 
@@ -1261,4 +1325,8 @@ ul.ya-share2__list li::before{
 
 .ya-share2__title{
     display:none;
+}
+
+ul.ya-share2__list.ya-share2__list_direction_horizontal {
+    margin-bottom:1px;
 }
