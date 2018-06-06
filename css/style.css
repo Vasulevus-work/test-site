@@ -265,7 +265,8 @@ card {
 
 .back {
     padding: 0;
-
+    margin-left: 3px;
+    width: 100%;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
     line-height: 1.35;
     font-size:15px;
@@ -316,6 +317,7 @@ li {
 .mini {
     font-size: 13px;
     padding-bottom:13px;
+    margin-bottom: 17px;
 }
 
 .back img {
@@ -569,7 +571,7 @@ h1 .h1 {
 }
 
 .forma {
-    margin-top: 21px;
+    margin-top: 24px;
     padding: 10px 29px 6px;
     background-color: #ffffff;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
@@ -724,7 +726,7 @@ li.btn.is-checked {
 .footer-yellback {
     background:#fbba42;
     margin:0px;
-    padding:10px 45px;
+    padding: 10px 45px 7px;
 
 }
 
@@ -752,6 +754,7 @@ li.btn.is-checked {
     color:white;
     margin-bottom:10px;
     text-align: left;
+    line-height: 2em;
 }
 
 .flex-container {
@@ -962,9 +965,11 @@ border: 2px solid white;
     margin-left: 20px;
 }
 
+.fa-chevron-up:before {
+    content: "\f077";
+    margin-left: 25px;
 
-
-
+}
 
  a .fa-chevron-up:hover{
     color:#3b3f42;
@@ -977,7 +982,7 @@ border: 2px solid white;
 
 .container-footer-margin {
     margin-bottom: 0px;
-    padding-bottom:10px;
+    padding-bottom:19px;
 }
 
 
@@ -1227,8 +1232,8 @@ ol li {
   
 
 
-  .padding-bottom-67{
-      padding-bottom: 67px;
+  .padding-bottom-72{
+    padding-bottom: 72px;
   }
 
 .ya-share2__list_direction_horizontal {
