@@ -110,6 +110,30 @@
     .fa-chevron-up {
         margin-left: 0;
     }
+
+    .text {
+        padding: 6px 23px 1px;
+    }
+
+    .forma2 input::placeholder {
+        font-size:13px;
+    }
+
+    .forma2 span.current {
+        font-size:13px;
+    }
+
+    .forma2 textarea::placeholder {
+        font-size:13px;
+    }
+
+    .forma2 .submit {
+        font-size:14px;
+    }
+
+    .h2.margin-top-0.margin-bottom-0 {
+        font-size:23px;
+    }
 }
 
 

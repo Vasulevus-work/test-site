@@ -304,7 +304,26 @@ card {
     transform: scale(1.1); 
 }
 
+.ads {
+    margin-top: 49px;
+    overflow: hidden;
+}
 
+.ads a {
+    overflow: hidden;
+}
+
+.ads img {
+    max-width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.ads a:hover img {
+    opacity:0.5;
+    cursor:pointer;
+    transform:scale(1.1);
+}
 
 .back a:hover {
     /* filter: brightness(50%); */
@@ -621,11 +640,16 @@ h1 .h1 {
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
 }
 
+.forma.col-12 {
+    box-shadow: none;
+}
+
 .forma2 {
     margin-top: 32px;
     padding: 10px 29px 6px;
     background-color: #ffffff;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
+    border-radius:5px;
 }
 
 .forma2 h3 {
@@ -658,6 +682,8 @@ h1 .h1 {
     border-radius: 5px;
     cursor:pointer;
 }
+
+
 
 form h3 {
     text-align: left;
@@ -1176,6 +1202,10 @@ ol {
 
   }
   
+  td {
+      border-bottom: 1px solid #dddddd;
+  }
+
 ol li::before {
     counter-increment: section;   
 
@@ -1225,6 +1255,18 @@ ol li {
         color:black;
     }
 
+    .other ol li a:hover{
+        text-decoration:underline;
+        color: var(--our-blue);
+    }
+
+
+    tr>th:first-child{
+        border-radius: 5px 0 0 5px;
+    }
+    tr>th:last-child{
+        border-radius:0 5px 5px 0;
+    }
 
 .other ol li ol {
     list-style-type:none;
