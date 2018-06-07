@@ -1,5 +1,8 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+
+
+
     .card0 {
         font-size:11px;
     }
@@ -26,7 +29,8 @@
     }
 
     .forma {
-        padding: 3px 29px 14px;
+        padding: 1px 29px 14px;
+        margin-top: 19px;
     }
 
     .zayavka{
@@ -42,6 +46,7 @@
         margin: 6px 0 1px;
         height: 72px;
     }
+
 
     .submit {
         margin-bottom: 0px;
@@ -63,9 +68,10 @@
     }
     
     .number1-footer a {
-        font-size:18px;
-        padding-left:9px;
-        text-align:left;
+        font-size: 18px;
+   
+        text-align: left;
+        display: inline;
     }
 
     .text-footer-nomargin {
@@ -115,6 +121,18 @@
         padding: 6px 23px 1px;
     }
 
+    .forma2 {
+        padding: 10px 29px 10px;
+    }
+
+    .forma2 input {
+        margin-bottom: 10px;
+    }
+    .forma2.message {
+        margin: 10px 0 10px;
+        height: 72px;
+    }
+
     .forma2 input::placeholder {
         font-size:13px;
     }
@@ -131,8 +149,27 @@
         font-size:14px;
     }
 
+    .forma2 .message {
+        margin: 10px 0 9px;
+    }
+
     .h2.margin-top-0.margin-bottom-0 {
         font-size:23px;
+    }
+
+    h1 {
+        font-size:35px;
+    }
+
+    form h3 {
+        margin: 9px 0 13px;
+    }
+
+    .container {
+        width:100%;
+    }
+    .footer-blackback {
+        padding-bottom:3px;
     }
 }
 
@@ -148,6 +185,10 @@
         padding-left:46px;
         margin: 13px 0;
         background-color: #52b2d7;
+        font-size: 24px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .menu-button:hover{
@@ -172,7 +213,11 @@
     }
 
     .text {
-        padding: 6px 11px 1px;
+            padding: 10px 15px 1px;
+        }
+
+    .text.pad-top a {
+        font-size:16px;
     }
 
     .submenu {
@@ -202,7 +247,8 @@
     .button.red.show {
         display: block;
         margin-top:12px;
-        padding: 16px 0px;
+        padding: 15px 0px;
+        text-align: center;
     }
     .number1, .number2 {
         text-align: right;
@@ -213,6 +259,7 @@
 
     .number2 a {
         padding-right:0;
+        text-align: right;
     }
 
     .logo {
@@ -275,11 +322,64 @@
     .blue {
         display:block;
     }
+
+    .h2.margin-top-0.margin-bottom-0 {
+        font-size: 21px;
+    }
+
+    .ads {
+        margin-top:0;
+    }
+
+    .forma2 {
+        margin-top:0;
+        width: 45%;
+    }
+
+    .flex-boxing {
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    .button.red {
+        padding: 16px 22px;
+        margin-top: 5px;
+    }
+
+    .footer-blackback {
+        padding-bottom:2px;
+    }
 }
 
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .footer-blackback {
+        padding-bottom:3px;
+    }
+
+    .h2.margin-top-0.margin-bottom-0 {
+        font-size: 19px;
+    }
+
+    .forma2 {
+        width:55%;
+        margin-left:10px;
+    }
+
+    .forma2 h3 {
+
+        font-size: 26px;
+    }
+
+    .margin-left-30 {
+        margin-left: 0;
+    }
+
+    .number2 a {
+           text-align: left;
+    }
+
     .card0 {
         font-size: 17px;
     }
@@ -291,7 +391,10 @@
     .button.red {
         display:block;
         margin-top: 14px;
+        text-align: center;
     }
+
+
 
     .button.red.show {
         display:none;
@@ -334,6 +437,27 @@
         float:left;
         display: block;
     }
+
+    blockquote {
+        padding-left:22px;
+        padding-top: 59px;
+    }
+
+    blockquote::before {
+        top: 22px;
+        left: 22px;
+        font-size: 28px;
+    }
+
+    .col-md-4 .col-lg-3 .align-self-center {
+        margin-bottom:20px;
+    }
+
+    .h2.margin-top-0.margin-bottom-0 {
+        font-size: 31px;
+    }
+
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -351,7 +475,7 @@
     .card0 {
         margin-left:auto;
         margin-right:auto;
-        width: 70%;
+        width: 52%;
     }
 
     .number1, .number2 {
@@ -366,19 +490,25 @@
 
     .number2 a {
         font-size: 19px;
+        text-align: center;
     }
 
     .button.red {
         width:50%;
         margin-left:auto;
         margin-right:auto;
+        font-size: 19px;
     }
 
     .menu-button {
 
             margin-left: auto;
             margin-right: auto;
+ 
+    }
 
+    .menu-button div {
+        text-align: center;
     }
 
     .flex-colum {
@@ -431,4 +561,17 @@
         display:none;
     }
     
+    .text.pad-top a {
+        font-size: 23px;
+    }
+
+    .submenu {
+        font-size: 17px;
+    }
+
+
+
+    .footer-blackback {
+        padding-bottom: 0px;
+    }
 }

@@ -83,6 +83,11 @@ h3, .h3 {
     margin-bottom:15px;
 }
 
+.flex-boxing{
+    display: flex;
+    flex-direction:column;
+}
+
 input, textarea, select, button {
     width:100%;
     font: 400 15px Roboto;
