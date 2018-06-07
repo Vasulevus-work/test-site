@@ -3,6 +3,7 @@ $(document).ready(function() {
 	//E-mail Ajax Send
 	var $form = $("form");
 	$form.submit(function() { //Change
+		console.log($form);
 		var th = $(this);
 		$.ajax({
 			type: "POST",
