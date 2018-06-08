@@ -153,6 +153,11 @@
         margin: 10px 0 9px;
     }
 
+    .forma2 h3 {
+
+        font-size: 26px;
+    }
+
     .h2.margin-top-0.margin-bottom-0 {
         font-size:23px;
     }
@@ -334,6 +339,7 @@
     .forma2 {
         margin-top:0;
         width: 45%;
+        padding: 27px 22px 30px;;
     }
 
     .flex-boxing {
@@ -365,6 +371,7 @@
     .forma2 {
         width:55%;
         margin-left:10px;
+        padding: 3px 22px 20px;
     }
 
     .forma2 h3 {
@@ -454,9 +461,12 @@
     }
 
     .h2.margin-top-0.margin-bottom-0 {
-        font-size: 31px;
+        font-size: 23px;
     }
 
+    div.col-md-4.col-lg-3.align-self-center{
+    margin-bottom: 20px;
+    }
 
 }
 
@@ -569,9 +579,65 @@
         font-size: 17px;
     }
 
-
-
     .footer-blackback {
         padding-bottom: 0px;
     }
+
+
+    .mar {
+        margin-right:5%;
+    }
+
+    .flex-boxing {
+        flex-direction: column;
+    }
+
+    .ads {
+        width:90%;
+        margin-bottom:20px;
+    }
+
+    .forma2 {
+        width:90%;
+        margin-left: 0px;
+    }
+
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    
+    tbody tr th {
+        display:none;
+    }
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none!important;
+        width: 100%!important; 
+		position: relative;
+		padding-left: 40%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 16px;
+		left: 26px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Услуга"; }
+    td:nth-of-type(2):before { content: "Сроки"; }
+    td:nth-of-type(3):before { content: "Цена"; }
 }
