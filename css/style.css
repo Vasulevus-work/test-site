@@ -170,6 +170,7 @@ img {
 
 }
 
+
 blockquote {
     background-color: var(--main-bg-color);
     padding: 22px;
@@ -289,6 +290,8 @@ card {
 .back a {
     display: block;
     overflow: hidden;
+    line-height: 1.5em;
+    font-size: 18px;
 }
 
 .back a:hover {
@@ -1451,4 +1454,27 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 
 .grid .element-item {
     padding-top:10px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.date {
+    font-weight: lighter;
+    font-size:13px;
+    margin-top: 5px;
+    margin-bottom: 34px;
+}
+
+.lifehack {
+    font-size:15px;
+    font-weight: lighter;
+}
+
+.tick {
+    margin-bottom:0px;
 }
