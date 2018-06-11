@@ -478,6 +478,7 @@
 
     h1 {
         font-size:28px;
+        text-align: center;
     }
 
 
@@ -489,9 +490,7 @@
         font-size:20px;
     }
 
-    .h1 {
-        font-size:26px;
-    }
+
 
     .other ol li a {
         font-size:15px;
@@ -514,6 +513,8 @@
         font-size:16px;
         line-height: 1.5;
     }
+
+
 
 }
 
