@@ -1493,8 +1493,9 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
     grid-gap: 30px;
+
 }
 
 .date {

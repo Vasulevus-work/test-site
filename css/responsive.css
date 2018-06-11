@@ -354,6 +354,10 @@
     .footer-blackback {
         padding-bottom:2px;
     }
+
+    .grid-container {
+        grid-gap: 14px;
+    }
 }
 
 
@@ -409,6 +413,10 @@
 
     .smallMenu li {
         padding: 0 6px;
+    }
+
+    .grid-container {
+        grid-gap: 10px;
     }
 
     .card {
@@ -524,7 +532,8 @@
     .card0 {
         margin-left:auto;
         margin-right:auto;
-        width: 52%;
+        width: 61%;
+        font-size: 15px;
     }
 
     .number1, .number2 {
@@ -539,7 +548,7 @@
         width:50%;
         margin-left:auto;
         margin-right:auto;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .menu-button {
@@ -599,12 +608,24 @@
         width:50%;
     }
 
+
+    .flex-container2 .control a {
+        display: block;
+        padding: 14px 18px;
+
+    }
+
     .button.red.button-footer {
         display:none;
     }
     
     .text.pad-top a {
-        font-size: 23px;
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+
+    .control {
+        padding: 20px 5px;
     }
 
     .submenu {
