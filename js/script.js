@@ -95,13 +95,16 @@
 
 
 
-      $('a[href*="#"]')
+      $('a[href*="#top"]')
       // Remove no scroll links
       .not('[href="#"]')
       .not('[href="#0"]')
       .not('.popup')
       .not('.comment-reply-link')
       .not('#cancel-comment-reply-link')
+      .not('#tabs')
+      .not('.menuControl')
+      .not('.tab')
       .click(function(event) {
         // On-page links
         if (

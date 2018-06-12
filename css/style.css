@@ -848,12 +848,12 @@ li.btn.is-checked {
 .flex-container2 {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 6px;
 }
 
 .control {
     margin: 0 0px;
-    padding: 20px 10px;
+    padding: 0 10px 20px ;
     border-radius: 10px;
 }
 
@@ -866,7 +866,7 @@ li.btn.is-checked {
     text-decoration: none;
     font-size:13px;
     color:black;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 2px 2px 0px rgba(59, 63, 66, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -877,7 +877,7 @@ li.btn.is-checked {
 }
 
 .flex-container2 .control a strong {
-    font-size:15px;
+    font-size:16px;
 }
 
 .fa-chevron-left, .fa-chevron-right {
@@ -1518,7 +1518,7 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 }
 
 .tick {
-    margin-bottom:0px;
+    margin-bottom: 30px;
 }
 
 .pad-bottom {

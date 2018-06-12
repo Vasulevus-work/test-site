@@ -106,7 +106,7 @@
     }
 
     .card {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .hidden {
@@ -276,6 +276,10 @@
         padding-right:10px;
     }
 
+    .tick {
+        margin-bottom: 20px;
+    }
+
     .back a {
         font-size: 15px;
     }
@@ -419,9 +423,6 @@
         grid-gap: 10px;
     }
 
-    .card {
-        margin-bottom: 20px;
-    }
 
     .mrg-top {
         margin-top: 0;
@@ -621,7 +622,7 @@
     }
     
     .text.pad-top a {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.2em;
     }
 
